@@ -16,13 +16,13 @@ import NavLinks from './NavLinks';
 
 export interface SitewideLayoutProps {
   children: React.ReactNode;
-  /** ISO 8601 date shown in the footer. Defaults to "2024-01-15". */
+  /** ISO 8601 date shown in the footer. */
   snapshotDate?: string;
 }
 
 export default function SitewideLayout({
   children,
-  snapshotDate = '2024-01-15',
+  snapshotDate = '2026-10-18',
 }: SitewideLayoutProps) {
   return (
     <div className="flex flex-col min-h-screen">

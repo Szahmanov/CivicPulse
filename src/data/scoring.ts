@@ -16,7 +16,6 @@ export interface RawScoreInputs {
   groupCount: number;        // raw count of all requests in this group (for repeat pressure)
   closedCount: number;       // raw count of closed cases in this group
   onTimeClosedCount: number; // raw count of closed cases resolved on time
-  hasOutreachFlag: boolean;  // from EJOutreachContext
 }
 
 export interface Maxima {
@@ -28,10 +27,9 @@ export interface Maxima {
 // Weight constants
 // ---------------------------------------------------------------------------
 
-export const WEIGHT_OPEN = 35;
-export const WEIGHT_REPEATED = 30;
+export const WEIGHT_OPEN = 40;
+export const WEIGHT_REPEATED = 35;
 export const WEIGHT_ONTIME = 25;
-export const WEIGHT_OUTREACH = 10;
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -57,7 +55,6 @@ export function clamp(value: number, min: number, max: number): number {
  *  - onTimePressure     = 1 − (raw.onTimeClosedCount / max(raw.closedCount, 1))
  *                         but 0 when raw.closedCount === 0 (absence of evidence
  *                         is not evidence of failure)
- *  - outreachContextFlag = raw.hasOutreachFlag ? 1 : 0
  *
  * All outputs are clamped to [0, 1].
  */
@@ -86,13 +83,10 @@ export function normalizeScoreInputs(
           1
         );
 
-  const outreachContextFlag: 0 | 1 = raw.hasOutreachFlag ? 1 : 0;
-
   return {
     openCasePressure,
     repeatedPressure,
     onTimePressure,
-    outreachContextFlag,
   };
 }
 
@@ -100,10 +94,9 @@ export function normalizeScoreInputs(
  * Computes a priority score from pre-normalised ScoreInputs.
  *
  * Formula:
- *   rawScore = openCasePressure * 35
- *            + repeatedPressure * 30
+ *   rawScore = openCasePressure * 40
+ *            + repeatedPressure * 35
  *            + onTimePressure   * 25
- *            + outreachContextFlag * 10
  *   score = clamp(rawScore, 0, 100), rounded to 2 decimal places
  *
  * The `inputs` and `normalizedInputs` fields of the returned ScoreResult
@@ -114,8 +107,7 @@ export function computePriorityScore(inputs: ScoreInputs): ScoreResult {
   const rawScore =
     inputs.openCasePressure * WEIGHT_OPEN +
     inputs.repeatedPressure * WEIGHT_REPEATED +
-    inputs.onTimePressure * WEIGHT_ONTIME +
-    inputs.outreachContextFlag * WEIGHT_OUTREACH;
+    inputs.onTimePressure * WEIGHT_ONTIME;
 
   const score = Math.round(clamp(rawScore, 0, 100) * 100) / 100;
 
@@ -176,15 +168,6 @@ export function generatePlainExplanation(
     parts.push(`There are no closed cases to evaluate resolution timing.`);
   } else {
     parts.push(`All closed cases in this area were resolved on time.`);
-  }
-
-  // Outreach flag caveat
-  if (inputs.outreachContextFlag === 1) {
-    parts.push(
-      `This neighborhood is also associated with aggregate environmental justice ` +
-        `outreach context — this reflects neighborhood-level data only and does not ` +
-        `profile any individual resident.`
-    );
   }
 
   return parts.join(' ');

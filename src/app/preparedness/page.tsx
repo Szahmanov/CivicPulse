@@ -64,7 +64,8 @@ export default function PreparednessPage() {
       {/* Source and snapshot attribution                                     */}
       {/* ------------------------------------------------------------------ */}
       <p className="text-xs text-gray-500 mb-6">
-        Source: FEMA Disaster Declarations Summary (OpenFEMA) — Snapshot:{' '}
+        Source: OpenFEMA Disaster Declarations Summaries (v2), Massachusetts —
+        Hackachusetts starter-kit extract — Snapshot:{' '}
         {DATA_SNAPSHOT_DATE}.{' '}
         <a
           href="https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2"
@@ -93,9 +94,10 @@ export default function PreparednessPage() {
       {/* Limitations note                                                    */}
       {/* ------------------------------------------------------------------ */}
       <p className="mt-4 text-xs text-gray-500">
-        This sample data is for demonstration purposes only. CivicPulse is not
-        an official City of Boston service and does not issue emergency alerts.
-        Data may not reflect actual historical events.
+        This is a saved historical extract, not a live feed. One disaster can
+        appear more than once because FEMA provides one row per designated area.
+        CivicPulse is not an official City of Boston service and does not issue
+        emergency alerts.
       </p>
     </div>
   );

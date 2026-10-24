@@ -4,7 +4,6 @@
  * PriorityCard — renders one priority review card with:
  *   - Header row: neighborhood, service topic, score badge
  *   - Score component bars (4 normalized pressure bars)
- *   - Outreach flag notice (when applicable)
  *   - Plain-language explanation (always visible)
  *   - Action Brief toggle (expand/collapse via useState)
  */
@@ -74,7 +73,7 @@ function PressureBar({ label, value, rawAnnotation, ariaLabel }: PressureBarProp
 
 export default function PriorityCard({
   card,
-  snapshotDate = '2024-01-15',
+  snapshotDate = '2026-10-18',
 }: PriorityCardProps) {
   const [briefOpen, setBriefOpen] = useState(false);
 
@@ -82,7 +81,6 @@ export default function PriorityCard({
   const scoreLabel = getScoreLabel(card.score);
 
   const lateCount = card.closedCount - card.onTimeCount;
-  const outreachRaw = card.outreachFlag ? 'Yes' : 'No';
 
   return (
     <article
@@ -130,23 +128,7 @@ export default function PriorityCard({
           rawAnnotation={`${lateCount} of ${card.closedCount} closed late`}
           ariaLabel={`Delayed resolution pressure: ${Math.round(card.onTimePressure * 100)}% of max. ${lateCount} of ${card.closedCount} closed late.`}
         />
-        <PressureBar
-          label="Outreach context"
-          value={card.outreachFlag ? 1 : 0}
-          rawAnnotation={`Outreach flag: ${outreachRaw}`}
-          ariaLabel={`Outreach context flag: ${outreachRaw}.`}
-        />
       </div>
-
-      {/* ------------------------------------------------------------------ */}
-      {/* Outreach flag notice                                                 */}
-      {/* ------------------------------------------------------------------ */}
-      {card.outreachFlag && (
-        <p className="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded px-3 py-2">
-          ⚐ Aggregate outreach context — this flag represents neighborhood-level data and does not
-          profile individual residents.
-        </p>
-      )}
 
       {/* ------------------------------------------------------------------ */}
       {/* Plain-language explanation (always visible)                          */}

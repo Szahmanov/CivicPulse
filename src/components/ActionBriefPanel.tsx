@@ -40,7 +40,7 @@ export default function ActionBriefPanel({ card, snapshotDate }: ActionBriefPane
 
         <div>
           <dt className="font-semibold text-gray-800 mb-0.5">Data source</dt>
-          <dd>Boston 311 Open Data (synthetic demo sample)</dd>
+          <dd>Boston 311 starter-kit extract (de-identified)</dd>
         </div>
 
         <div>
@@ -51,9 +51,9 @@ export default function ActionBriefPanel({ card, snapshotDate }: ActionBriefPane
         <div>
           <dt className="font-semibold text-gray-800 mb-0.5">Limitations</dt>
           <dd className="text-gray-600">
-            This is synthetic demonstration data only. CivicPulse is not an official City of Boston
-            service and does not make enforcement, benefit, emergency, or eligibility decisions.
-            Scores are for review prioritization only.
+            This is a saved 2026-10-18 extract, not a live feed. CivicPulse is not an official
+            City of Boston service and does not make enforcement, benefit, emergency, or eligibility
+            decisions. Scores use raw counts and are for review prioritization only.
           </dd>
         </div>
       </dl>

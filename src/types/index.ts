@@ -25,12 +25,12 @@ export interface Request311 {
 }
 
 // ---------------------------------------------------------------------------
-// Environmental-justice outreach context
+// Environmental-justice context
 // ---------------------------------------------------------------------------
 
-export interface EJOutreachContext {
-  neighborhood: string;
-  hasOutreachFlag: boolean;
+export interface EJCitywideContext {
+  municipality: string;
+  flaggedBlockGroupCount: number;
   note: string;
 }
 
@@ -40,6 +40,7 @@ export interface EJOutreachContext {
 
 export interface FemaDeclaration {
   declarationNumber: string;
+  title?: string;
   disasterType: string;
   declarationDate: string; // ISO 8601 date
   state: string;
@@ -58,7 +59,7 @@ export interface Requests311File {
 
 export interface EJOutreachFile {
   meta: DataFileMeta;
-  records: EJOutreachContext[];
+  records: EJCitywideContext[];
 }
 
 export interface FemaDeclarationsFile {
@@ -74,7 +75,6 @@ export interface ScoreInputs {
   openCasePressure: number; // 0-1 normalised
   repeatedPressure: number; // 0-1 normalised
   onTimePressure: number; // 0-1 normalised (1 - on-time rate)
-  outreachContextFlag: 0 | 1;
 }
 
 export interface ScoreResult {
@@ -106,7 +106,6 @@ export interface PriorityCardData {
   openPressure: number; // 0-1 normalised
   repeatedPressure: number; // 0-1 normalised
   onTimePressure: number; // 0-1 normalised
-  outreachFlag: boolean;
   plainExplanation: string;
   openCount: number; // raw count for display
   totalCount: number; // raw count for display

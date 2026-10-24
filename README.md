@@ -12,14 +12,14 @@ Public service-request data can show where recurring issues may need attention, 
 
 - Filters Boston 311-style requests by neighborhood, service topic, department, case status, and date.
 - Summarizes total requests, open cases, neighborhoods, and service topics.
-- Ranks neighborhood-and-topic combinations using an explainable score based on open cases, repeated requests, delayed resolutions, and aggregate outreach context.
+- Ranks neighborhood-and-topic combinations using an explainable score based on open cases, repeated requests, and on-time status.
 - Provides an expandable Action Brief explaining what the data shows, why human review may be useful, the source, snapshot date, and limitations.
 - Shows Massachusetts FEMA declarations strictly as historical preparedness context, never as a live alert or risk assessment.
 - Documents every dataset, its limitations, and links to official public sources.
 
 ## Run locally
 
-Requires Node.js 24+ and npm.
+Requires Node.js 20+ and npm.
 
 ```bash
 npm install
@@ -39,15 +39,25 @@ npm run build
 
 ## Data and limitations
 
-The app intentionally ships with **synthetic demonstration data**. It is modeled on public data structures but is not a live feed and must not be used to infer an individual resident, an exact address, a current case outcome, or an official operational decision.
+The app ships with static, de-identified extracts supplied in the Hackachusetts starter kit and saved on 2026-10-18. It is not a live feed and must not be used to infer an individual resident, an exact address, a current case outcome, or an official operational decision.
 
 | Data context | In-app use | Official reference |
 | --- | --- | --- |
-| Boston 311 | Aggregate service-request patterns | [Boston 311 Open Data](https://data.boston.gov/) |
-| Environmental Justice | Aggregate neighborhood outreach context only | [Massachusetts EJ population data](https://www.mass.gov/info-details/environmental-justice-populations-in-massachusetts) |
-| FEMA | Historical Massachusetts disaster declarations | [FEMA OpenFEMA](https://www.fema.gov/about/openfema) |
+| Boston 311 | 4,990 valid de-identified service-request rows from the supplied 5,000-row extract | [Boston 311 Open Data](https://data.boston.gov/) |
+| Environmental Justice | Citywide Boston block-group context only; it does not affect the score | [Massachusetts EJ population data](https://www.mass.gov/info-details/environmental-justice-populations-in-massachusetts) |
+| FEMA | 415 historical Massachusetts declaration rows from the supplied extract | [FEMA OpenFEMA](https://www.fema.gov/about/openfema) |
 
-No personal information is collected, shown, or used for profiling. The environmental-justice indicator is a neighborhood-level context flag, not a claim about any person. FEMA information is historical only; use official emergency channels for current information.
+No personal information is collected, shown, or used for profiling. The environmental-justice extract is not mapped to neighborhoods and does not affect priority scores. FEMA information is historical only; use official emergency channels for current information.
+
+To regenerate the derived JSON data from the committed starter-kit CSV extracts:
+
+```bash
+npm run prepare-data
+```
+
+## AI in the development process
+
+AI-assisted development was used to build and verify CivicPulse. The product itself makes no runtime LLM or AI API calls: its ranking is a transparent, deterministic calculation so users can inspect the evidence behind each review prompt.
 
 ## How Kiro was used
 
@@ -64,7 +74,9 @@ Kiro IDE was the primary development environment for this project.
 .kiro/specs/civicpulse/  Kiro requirements, design, and task traceability
 src/app/                Dashboard, preparedness, and data-limitation pages
 src/components/         Filters, cards, tables, charts, and accessible UI
-src/data/               Typed local synthetic datasets and scoring utilities
+kit-data/               Supplied, de-identified CSV extracts and provenance notes
+scripts/                Reproducible CSV-to-JSON conversion
+src/data/               Typed local extract loaders and scoring utilities
 src/test/               Test setup and accessibility checks
 ```
 

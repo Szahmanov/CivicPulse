@@ -1,566 +1,3745 @@
 {
   "meta": {
-    "snapshotDate": "2024-01-15",
-    "source": "FEMA Disaster Declarations Summary — Massachusetts (historical)",
+    "snapshotDate": "2026-10-18",
+    "source": "OpenFEMA Disaster Declarations Summaries (v2), Massachusetts — Hackachusetts starter-kit extract",
     "officialUrl": "https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2",
-    "limitations": "This data is historical context only and is not a live emergency alert or current risk assessment. CivicPulse is not an official City of Boston service and does not issue emergency notifications."
+    "limitations": "Historical declarations only. One row represents a designated area, so one disaster can appear several times. This is not a live alert or a current risk assessment."
   },
   "records": [
     {
-      "declarationNumber": "DR-0118-MA",
+      "declarationNumber": "DR-4919",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Winter Storm",
+      "declarationDate": "2026-06-30",
+      "state": "Massachusetts",
+      "county": "Mashpee Wampanoag Tribe",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4780",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "2024-05-15",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4780",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "2024-05-15",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
       "disasterType": "Hurricane",
-      "declarationDate": "1962-09-17",
+      "declarationDate": "2023-09-15",
       "state": "Massachusetts",
-      "county": "Suffolk",
-      "programsActivated": [
-        "Public Assistance"
-      ]
+      "county": "Dukes (County)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-0183-MA",
-      "disasterType": "Flood",
-      "declarationDate": "1965-07-06",
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
       "state": "Massachusetts",
-      "county": "Middlesex",
-      "programsActivated": [
-        "Public Assistance",
-        "Individual Assistance"
-      ]
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-0267-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "1969-07-13",
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
       "state": "Massachusetts",
-      "county": "Suffolk",
-      "programsActivated": [
-        "Public Assistance"
-      ]
+      "county": "Hampden (County)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-0362-MA",
-      "disasterType": "Flood",
-      "declarationDate": "1972-03-10",
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
       "state": "Massachusetts",
-      "county": "Hampden",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance"
-      ]
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-0432-MA",
-      "disasterType": "Flood",
-      "declarationDate": "1974-07-01",
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
       "state": "Massachusetts",
-      "county": "Middlesex",
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Berkshire (County)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-0498-MA",
-      "disasterType": "Earthquake",
-      "declarationDate": "1976-08-19",
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Public Assistance"
-      ]
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-0564-MA",
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3599",
+      "title": "HURRICANE LEE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2023-09-15",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4651",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
       "disasterType": "Snowstorm",
-      "declarationDate": "1978-02-19",
+      "declarationDate": "2022-04-18",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-0601-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "1979-09-08",
-      "state": "Massachusetts",
-      "county": "Barnstable",
-      "programsActivated": [
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-0698-MA",
-      "disasterType": "Flood",
-      "declarationDate": "1982-07-20",
-      "state": "Massachusetts",
-      "county": "Worcester",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-0762-MA",
-      "disasterType": "Hurricane",
-      "declarationDate": "1985-09-12",
-      "state": "Massachusetts",
-      "county": "Barnstable",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-0823-MA",
-      "disasterType": "Flood",
-      "declarationDate": "1987-07-04",
-      "state": "Massachusetts",
-      "county": "Middlesex",
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-0894-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "1990-04-12",
-      "state": "Massachusetts",
-      "county": "Suffolk",
-      "programsActivated": [
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-0921-MA",
-      "disasterType": "Hurricane",
-      "declarationDate": "1991-10-04",
-      "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-0956-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "1992-08-22",
-      "state": "Massachusetts",
-      "county": "Essex",
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-0990-MA",
+      "declarationNumber": "DR-4651",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
       "disasterType": "Snowstorm",
-      "declarationDate": "1993-02-03",
+      "declarationDate": "2022-04-18",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Public Assistance"
-      ]
+      "county": "Mashpee Wampanoag Tribe",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-1024-MA",
-      "disasterType": "Ice Storm",
-      "declarationDate": "1994-02-16",
-      "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1101-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "1996-05-07",
-      "state": "Massachusetts",
-      "county": "Middlesex",
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1148-MA",
-      "disasterType": "Flood",
-      "declarationDate": "1997-04-02",
-      "state": "Massachusetts",
-      "county": "Hampden",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1184-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "1998-09-02",
-      "state": "Massachusetts",
-      "county": "Essex",
-      "programsActivated": [
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1231-MA",
-      "disasterType": "Hurricane",
-      "declarationDate": "1999-08-15",
-      "state": "Massachusetts",
-      "county": "Bristol",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1348-MA",
-      "disasterType": "Drought",
-      "declarationDate": "2001-08-16",
-      "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1428-MA",
+      "declarationNumber": "DR-4651",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
       "disasterType": "Snowstorm",
-      "declarationDate": "2003-01-03",
+      "declarationDate": "2022-04-18",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance"
-      ]
+      "county": "Suffolk (County)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-1490-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2004-06-06",
+      "declarationNumber": "DR-4651",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2022-04-18",
       "state": "Massachusetts",
-      "county": "Essex",
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-1542-MA",
-      "disasterType": "Flood",
-      "declarationDate": "2005-07-11",
+      "declarationNumber": "DR-4651",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2022-04-18",
       "state": "Massachusetts",
-      "county": "Worcester",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-1614-MA",
-      "disasterType": "Flood",
-      "declarationDate": "2006-06-27",
-      "state": "Massachusetts",
-      "county": "Middlesex",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1701-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2007-03-20",
-      "state": "Massachusetts",
-      "county": "Barnstable",
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1764-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2008-08-08",
-      "state": "Massachusetts",
-      "county": "Worcester",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1830-MA",
-      "disasterType": "Flood",
-      "declarationDate": "2009-03-09",
-      "state": "Massachusetts",
-      "county": "Middlesex",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1898-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2010-07-20",
-      "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-1909-MA",
-      "disasterType": "Flood",
-      "declarationDate": "2010-06-06",
-      "state": "Massachusetts",
-      "county": "Middlesex",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-4028-MA",
+      "declarationNumber": "EM-3566",
+      "title": "TROPICAL STORM HENRI",
       "disasterType": "Hurricane",
-      "declarationDate": "2011-09-11",
+      "declarationDate": "2021-08-22",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Mashpee Wampanoag Tribe",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-1994-MA",
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Mashpee Wampanoag Tribe",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Wampanoag Tribe of Gay Head (Aquinnah)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Hassanamisco Indian Reservation",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4496",
+      "title": "COVID-19 PANDEMIC",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-27",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3497",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Wampanoag Tribe of Gay Head (Aquinnah)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3484",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Mashpee Wampanoag Tribe",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3438",
+      "title": "COVID-19",
+      "disasterType": "Biological",
+      "declarationDate": "2020-03-13",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4379",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2018-07-19",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4379",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2018-07-19",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4379",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2018-07-19",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4379",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2018-07-19",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4379",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2018-07-19",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4372",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2018-06-25",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4372",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2018-06-25",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4372",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2018-06-25",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4372",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2018-06-25",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4372",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2018-06-25",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4372",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2018-06-25",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4214",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2015-04-13",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4214",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2015-04-13",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4214",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2015-04-13",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4214",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2015-04-13",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4214",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2015-04-13",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4214",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2015-04-13",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4214",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2015-04-13",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4214",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2015-04-13",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4214",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2015-04-13",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4214",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2015-04-13",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4110",
+      "title": "SEVERE WINTER STORM, SNOWSTORM, AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2013-04-19",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3362",
+      "title": "EXPLOSIONS",
+      "disasterType": "Terrorist",
+      "declarationDate": "2013-04-17",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3362",
+      "title": "EXPLOSIONS",
+      "disasterType": "Terrorist",
+      "declarationDate": "2013-04-17",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3362",
+      "title": "EXPLOSIONS",
+      "disasterType": "Terrorist",
+      "declarationDate": "2013-04-17",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3362",
+      "title": "EXPLOSIONS",
+      "disasterType": "Terrorist",
+      "declarationDate": "2013-04-17",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4097",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-12-19",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4097",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-12-19",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4097",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-12-19",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4097",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-12-19",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4097",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-12-19",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4097",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-12-19",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3350",
+      "title": "HURRICANE SANDY",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-10-28",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4051",
+      "title": "SEVERE STORM AND SNOWSTORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2012-01-06",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4051",
+      "title": "SEVERE STORM AND SNOWSTORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2012-01-06",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4051",
+      "title": "SEVERE STORM AND SNOWSTORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2012-01-06",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4051",
+      "title": "SEVERE STORM AND SNOWSTORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2012-01-06",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4051",
+      "title": "SEVERE STORM AND SNOWSTORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2012-01-06",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4051",
+      "title": "SEVERE STORM AND SNOWSTORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2012-01-06",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3343",
+      "title": "SEVERE STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2011-11-01",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3343",
+      "title": "SEVERE STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2011-11-01",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3343",
+      "title": "SEVERE STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2011-11-01",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3343",
+      "title": "SEVERE STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2011-11-01",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3343",
+      "title": "SEVERE STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2011-11-01",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3343",
+      "title": "SEVERE STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2011-11-01",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3343",
+      "title": "SEVERE STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2011-11-01",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3343",
+      "title": "SEVERE STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2011-11-01",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4028",
+      "title": "TROPICAL STORM IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-09-03",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4028",
+      "title": "TROPICAL STORM IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-09-03",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4028",
+      "title": "TROPICAL STORM IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-09-03",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4028",
+      "title": "TROPICAL STORM IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-09-03",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4028",
+      "title": "TROPICAL STORM IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-09-03",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4028",
+      "title": "TROPICAL STORM IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-09-03",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4028",
+      "title": "TROPICAL STORM IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-09-03",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4028",
+      "title": "TROPICAL STORM IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-09-03",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-4028",
+      "title": "TROPICAL STORM IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-09-03",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3330",
+      "title": "HURRICANE IRENE",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-08-26",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1994",
+      "title": "SEVERE STORMS AND TORNADOES",
       "disasterType": "Tornado",
-      "declarationDate": "2011-05-26",
+      "declarationDate": "2011-06-15",
       "state": "Massachusetts",
-      "county": "Hampden",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Hampden (County)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-2006-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2011-08-17",
+      "declarationNumber": "DR-1994",
+      "title": "SEVERE STORMS AND TORNADOES",
+      "disasterType": "Tornado",
+      "declarationDate": "2011-06-15",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4046-MA",
-      "disasterType": "Hurricane",
-      "declarationDate": "2012-09-05",
-      "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-4110-MA",
+      "declarationNumber": "DR-1959",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
       "disasterType": "Snowstorm",
-      "declarationDate": "2013-01-19",
+      "declarationDate": "2011-03-07",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance"
-      ]
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4176-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2014-06-05",
-      "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-4214-MA",
+      "declarationNumber": "DR-1959",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
       "disasterType": "Snowstorm",
-      "declarationDate": "2015-03-28",
+      "declarationDate": "2011-03-07",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4272-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2016-03-28",
+      "declarationNumber": "DR-1959",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2011-03-07",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Berkshire (County)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4328-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2017-09-14",
+      "declarationNumber": "DR-1959",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2011-03-07",
       "state": "Massachusetts",
-      "county": "Hampden",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance"
-      ]
+      "county": "Suffolk (County)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4393-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2018-07-25",
+      "declarationNumber": "DR-1959",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2011-03-07",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4401-MA",
-      "disasterType": "Ice Storm",
-      "declarationDate": "2018-12-01",
+      "declarationNumber": "DR-1959",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2011-03-07",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Public Assistance"
-      ]
+      "county": "Hampden (County)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4452-MA",
-      "disasterType": "Flood",
-      "declarationDate": "2019-03-26",
+      "declarationNumber": "DR-1959",
+      "title": "SEVERE WINTER STORM AND SNOWSTORM",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2011-03-07",
       "state": "Massachusetts",
-      "county": "Middlesex",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Hampshire (County)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4512-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2020-08-04",
-      "state": "Massachusetts",
-      "county": "Barnstable",
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-4524-MA",
-      "disasterType": "Flood",
-      "declarationDate": "2020-06-20",
-      "state": "Massachusetts",
-      "county": "Middlesex",
-      "programsActivated": [
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-4592-MA",
-      "disasterType": "Severe Storm",
-      "declarationDate": "2021-04-27",
-      "state": "Massachusetts",
-      "county": "Hampden",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
-    },
-    {
-      "declarationNumber": "DR-4612-MA",
+      "declarationNumber": "EM-3315",
+      "title": "HURRICANE EARL",
       "disasterType": "Hurricane",
-      "declarationDate": "2021-09-14",
+      "declarationDate": "2010-09-02",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4664-MA",
+      "declarationNumber": "EM-3315",
+      "title": "HURRICANE EARL",
+      "disasterType": "Hurricane",
+      "declarationDate": "2010-09-02",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3315",
+      "title": "HURRICANE EARL",
+      "disasterType": "Hurricane",
+      "declarationDate": "2010-09-02",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3315",
+      "title": "HURRICANE EARL",
+      "disasterType": "Hurricane",
+      "declarationDate": "2010-09-02",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3315",
+      "title": "HURRICANE EARL",
+      "disasterType": "Hurricane",
+      "declarationDate": "2010-09-02",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3315",
+      "title": "HURRICANE EARL",
+      "disasterType": "Hurricane",
+      "declarationDate": "2010-09-02",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3315",
+      "title": "HURRICANE EARL",
+      "disasterType": "Hurricane",
+      "declarationDate": "2010-09-02",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3315",
+      "title": "HURRICANE EARL",
+      "disasterType": "Hurricane",
+      "declarationDate": "2010-09-02",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3315",
+      "title": "HURRICANE EARL",
+      "disasterType": "Hurricane",
+      "declarationDate": "2010-09-02",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3315",
+      "title": "HURRICANE EARL",
+      "disasterType": "Hurricane",
+      "declarationDate": "2010-09-02",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3312",
+      "title": "WATER MAIN BREAK",
+      "disasterType": "Other",
+      "declarationDate": "2010-05-03",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3312",
+      "title": "WATER MAIN BREAK",
+      "disasterType": "Other",
+      "declarationDate": "2010-05-03",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3312",
+      "title": "WATER MAIN BREAK",
+      "disasterType": "Other",
+      "declarationDate": "2010-05-03",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3312",
+      "title": "WATER MAIN BREAK",
+      "disasterType": "Other",
+      "declarationDate": "2010-05-03",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1895",
+      "title": "SEVERE STORMS AND  FLOODING",
       "disasterType": "Severe Storm",
-      "declarationDate": "2022-05-27",
+      "declarationDate": "2010-03-29",
       "state": "Massachusetts",
-      "county": "Suffolk",
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Suffolk (County)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4677-MA",
-      "disasterType": "Flood",
-      "declarationDate": "2022-07-24",
-      "state": "Massachusetts",
-      "county": "Hampden",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance"
-      ]
-    },
-    {
-      "declarationNumber": "DR-4720-MA",
+      "declarationNumber": "DR-1895",
+      "title": "SEVERE STORMS AND  FLOODING",
       "disasterType": "Severe Storm",
-      "declarationDate": "2023-05-07",
+      "declarationDate": "2010-03-29",
       "state": "Massachusetts",
-      "county": null,
-      "programsActivated": [
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
     },
     {
-      "declarationNumber": "DR-4738-MA",
-      "disasterType": "Flood",
-      "declarationDate": "2023-04-22",
+      "declarationNumber": "DR-1895",
+      "title": "SEVERE STORMS AND  FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2010-03-29",
       "state": "Massachusetts",
-      "county": "Middlesex",
-      "programsActivated": [
-        "Individual Assistance",
-        "Public Assistance",
-        "Hazard Mitigation"
-      ]
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1895",
+      "title": "SEVERE STORMS AND  FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2010-03-29",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1895",
+      "title": "SEVERE STORMS AND  FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2010-03-29",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1895",
+      "title": "SEVERE STORMS AND  FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2010-03-29",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1895",
+      "title": "SEVERE STORMS AND  FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2010-03-29",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1813",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Ice Storm",
+      "declarationDate": "2009-01-05",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1813",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Ice Storm",
+      "declarationDate": "2009-01-05",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1813",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Ice Storm",
+      "declarationDate": "2009-01-05",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1813",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Ice Storm",
+      "declarationDate": "2009-01-05",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1813",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Ice Storm",
+      "declarationDate": "2009-01-05",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1813",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Ice Storm",
+      "declarationDate": "2009-01-05",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1813",
+      "title": "SEVERE WINTER STORM AND FLOODING",
+      "disasterType": "Severe Ice Storm",
+      "declarationDate": "2009-01-05",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3296",
+      "title": "SEVERE WINTER STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2008-12-13",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3296",
+      "title": "SEVERE WINTER STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2008-12-13",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3296",
+      "title": "SEVERE WINTER STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2008-12-13",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3296",
+      "title": "SEVERE WINTER STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2008-12-13",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3296",
+      "title": "SEVERE WINTER STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2008-12-13",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3296",
+      "title": "SEVERE WINTER STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2008-12-13",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3296",
+      "title": "SEVERE WINTER STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2008-12-13",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3296",
+      "title": "SEVERE WINTER STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2008-12-13",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3296",
+      "title": "SEVERE WINTER STORM",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2008-12-13",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1701",
+      "title": "SEVERE STORMS AND INLAND AND COASTAL FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2007-05-16",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1701",
+      "title": "SEVERE STORMS AND INLAND AND COASTAL FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2007-05-16",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1701",
+      "title": "SEVERE STORMS AND INLAND AND COASTAL FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2007-05-16",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1701",
+      "title": "SEVERE STORMS AND INLAND AND COASTAL FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2007-05-16",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1701",
+      "title": "SEVERE STORMS AND INLAND AND COASTAL FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2007-05-16",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1701",
+      "title": "SEVERE STORMS AND INLAND AND COASTAL FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2007-05-16",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1701",
+      "title": "SEVERE STORMS AND INLAND AND COASTAL FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2007-05-16",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1701",
+      "title": "SEVERE STORMS AND INLAND AND COASTAL FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2007-05-16",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1642",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2006-05-25",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1642",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2006-05-25",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1642",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2006-05-25",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1614",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-11-10",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3264",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2005-10-19",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3252",
+      "title": "HURRICANE KATRINA EVACUATION",
+      "disasterType": "Hurricane",
+      "declarationDate": "2005-09-13",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3201",
+      "title": "RECORD AND/OR NEAR RECORD SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2005-02-17",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1512",
+      "title": "FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "2004-04-21",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1512",
+      "title": "FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "2004-04-21",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1512",
+      "title": "FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "2004-04-21",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1512",
+      "title": "FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "2004-04-21",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1512",
+      "title": "FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "2004-04-21",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3191",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2004-01-15",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3175",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-03-11",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1364",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2001-04-10",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1364",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2001-04-10",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1364",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2001-04-10",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1364",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2001-04-10",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1364",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2001-04-10",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1364",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2001-04-10",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1364",
+      "title": "SEVERE STORMS AND FLOODING",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2001-04-10",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3165",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2001-03-28",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3165",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2001-03-28",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3165",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2001-03-28",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3165",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2001-03-28",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3165",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2001-03-28",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3165",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2001-03-28",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3165",
+      "title": "SNOW",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2001-03-28",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3153",
+      "title": "WAREHOUSE FIRE.",
+      "disasterType": "Fire",
+      "declarationDate": "1999-12-06",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1224",
+      "title": "HEAVY RAINS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1998-06-23",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1224",
+      "title": "HEAVY RAINS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1998-06-23",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1224",
+      "title": "HEAVY RAINS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1998-06-23",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1224",
+      "title": "HEAVY RAINS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1998-06-23",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1224",
+      "title": "HEAVY RAINS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1998-06-23",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1224",
+      "title": "HEAVY RAINS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1998-06-23",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1224",
+      "title": "HEAVY RAINS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1998-06-23",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1142",
+      "title": "EXTREME WEATHER CONDITONS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1996-10-25",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1142",
+      "title": "EXTREME WEATHER CONDITONS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1996-10-25",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1142",
+      "title": "EXTREME WEATHER CONDITONS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1996-10-25",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1142",
+      "title": "EXTREME WEATHER CONDITONS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1996-10-25",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1142",
+      "title": "EXTREME WEATHER CONDITONS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1996-10-25",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3119",
+      "title": "EXTREME WEATHER CONDITIONS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1996-10-23",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3119",
+      "title": "EXTREME WEATHER CONDITIONS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1996-10-23",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3119",
+      "title": "EXTREME WEATHER CONDITIONS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1996-10-23",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3119",
+      "title": "EXTREME WEATHER CONDITIONS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1996-10-23",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3119",
+      "title": "EXTREME WEATHER CONDITIONS AND FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1996-10-23",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-1090",
+      "title": "BLIZZARD OF 96",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1996-01-24",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "FM-2116",
+      "title": "RUSSELL FIRE",
+      "disasterType": "Fire",
+      "declarationDate": "1995-09-12",
+      "state": "Massachusetts",
+      "county": "Statewide",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3103",
+      "title": "BLIZZARDS, HIGH WINDS & RECORD SNOWFALL",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-03-16",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-975",
+      "title": "WINTER COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1992-12-21",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-975",
+      "title": "WINTER COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1992-12-21",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-975",
+      "title": "WINTER COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1992-12-21",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-975",
+      "title": "WINTER COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1992-12-21",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-975",
+      "title": "WINTER COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1992-12-21",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-975",
+      "title": "WINTER COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1992-12-21",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-975",
+      "title": "WINTER COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1992-12-21",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-975",
+      "title": "WINTER COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1992-12-21",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-975",
+      "title": "WINTER COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1992-12-21",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-920",
+      "title": "COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1991-11-04",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-920",
+      "title": "COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1991-11-04",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-920",
+      "title": "COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1991-11-04",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-920",
+      "title": "COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1991-11-04",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-920",
+      "title": "COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1991-11-04",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-920",
+      "title": "COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1991-11-04",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-920",
+      "title": "COASTAL STORM",
+      "disasterType": "Coastal Storm",
+      "declarationDate": "1991-11-04",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-914",
+      "title": "HURRICANE BOB",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-08-26",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-790",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1987-04-18",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-790",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1987-04-18",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-790",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1987-04-18",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-790",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1987-04-18",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-790",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1987-04-18",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-790",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1987-04-18",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-790",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1987-04-18",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-790",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1987-04-18",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Hampshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Berkshire (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Middlesex (County)(in (P)MSA 1120,2600,4560)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Worcester (County) (in (P)MSA 1120,2600,9240)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Franklin (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-751",
+      "title": "HURRICANE GLORIA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-10-28",
+      "state": "Massachusetts",
+      "county": "Hampden (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-650",
+      "title": "URBAN FIRE",
+      "disasterType": "Fire",
+      "declarationDate": "1981-12-03",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-546",
+      "title": "COASTAL STORMS, FLOOD, ICE & SNOW",
+      "disasterType": "Flood",
+      "declarationDate": "1978-02-10",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-546",
+      "title": "COASTAL STORMS, FLOOD, ICE & SNOW",
+      "disasterType": "Flood",
+      "declarationDate": "1978-02-10",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-546",
+      "title": "COASTAL STORMS, FLOOD, ICE & SNOW",
+      "disasterType": "Flood",
+      "declarationDate": "1978-02-10",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-546",
+      "title": "COASTAL STORMS, FLOOD, ICE & SNOW",
+      "disasterType": "Flood",
+      "declarationDate": "1978-02-10",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-546",
+      "title": "COASTAL STORMS, FLOOD, ICE & SNOW",
+      "disasterType": "Flood",
+      "declarationDate": "1978-02-10",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-546",
+      "title": "COASTAL STORMS, FLOOD, ICE & SNOW",
+      "disasterType": "Flood",
+      "declarationDate": "1978-02-10",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-546",
+      "title": "COASTAL STORMS, FLOOD, ICE & SNOW",
+      "disasterType": "Flood",
+      "declarationDate": "1978-02-10",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-546",
+      "title": "COASTAL STORMS, FLOOD, ICE & SNOW",
+      "disasterType": "Flood",
+      "declarationDate": "1978-02-10",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "EM-3059",
+      "title": "BLIZZARD & SNOWSTORMS",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1978-02-07",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-405",
+      "title": "FIRE (CITY OF CHELSEA)",
+      "disasterType": "Fire",
+      "declarationDate": "1973-10-16",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-357",
+      "title": "TOXIC ALGAE IN COASTAL WATERS",
+      "disasterType": "Fishing Losses",
+      "declarationDate": "1972-09-28",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-357",
+      "title": "TOXIC ALGAE IN COASTAL WATERS",
+      "disasterType": "Fishing Losses",
+      "declarationDate": "1972-09-28",
+      "state": "Massachusetts",
+      "county": "Nantucket (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-357",
+      "title": "TOXIC ALGAE IN COASTAL WATERS",
+      "disasterType": "Fishing Losses",
+      "declarationDate": "1972-09-28",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-357",
+      "title": "TOXIC ALGAE IN COASTAL WATERS",
+      "disasterType": "Fishing Losses",
+      "declarationDate": "1972-09-28",
+      "state": "Massachusetts",
+      "county": "Dukes (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-357",
+      "title": "TOXIC ALGAE IN COASTAL WATERS",
+      "disasterType": "Fishing Losses",
+      "declarationDate": "1972-09-28",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-357",
+      "title": "TOXIC ALGAE IN COASTAL WATERS",
+      "disasterType": "Fishing Losses",
+      "declarationDate": "1972-09-28",
+      "state": "Massachusetts",
+      "county": "Barnstable (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-357",
+      "title": "TOXIC ALGAE IN COASTAL WATERS",
+      "disasterType": "Fishing Losses",
+      "declarationDate": "1972-09-28",
+      "state": "Massachusetts",
+      "county": "Bristol (County)(in (P)MSA 1120,1200,2480,5400,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-357",
+      "title": "TOXIC ALGAE IN COASTAL WATERS",
+      "disasterType": "Fishing Losses",
+      "declarationDate": "1972-09-28",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-325",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1972-03-06",
+      "state": "Massachusetts",
+      "county": "Plymouth (County)(in (P)MSA 1120,1200,5400)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-325",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1972-03-06",
+      "state": "Massachusetts",
+      "county": "Suffolk (County)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-325",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1972-03-06",
+      "state": "Massachusetts",
+      "county": "Essex (County)(in PMSA 1120,4160,7090)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-325",
+      "title": "SEVERE STORMS & FLOODING",
+      "disasterType": "Flood",
+      "declarationDate": "1972-03-06",
+      "state": "Massachusetts",
+      "county": "Norfolk (County)(in PMSA 1120,1200,6060)",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-43",
+      "title": "HURRICANE & FLOODS",
+      "disasterType": "Hurricane",
+      "declarationDate": "1955-08-20",
+      "state": "Massachusetts",
+      "county": "Statewide",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-22",
+      "title": "HURRICANES",
+      "disasterType": "Hurricane",
+      "declarationDate": "1954-09-02",
+      "state": "Massachusetts",
+      "county": "Statewide",
+      "programsActivated": []
+    },
+    {
+      "declarationNumber": "DR-7",
+      "title": "TORNADO",
+      "disasterType": "Tornado",
+      "declarationDate": "1953-06-11",
+      "state": "Massachusetts",
+      "county": "Statewide",
+      "programsActivated": []
     }
   ]
 }

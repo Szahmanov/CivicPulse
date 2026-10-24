@@ -4,7 +4,8 @@
  * Renders a sortable accessible table of FEMA Major Disaster Declarations.
  * Records are sorted by declarationDate descending (most recent first).
  * null county → displayed as "Statewide".
- * programsActivated → joined with ", ".
+ * The starter-kit extract does not include program data, so that column is
+ * omitted when no record has programsActivated values.
  */
 
 import type { FemaDeclaration } from '@/types/index';
@@ -23,6 +24,7 @@ export default function FemaDeclarationList({
       new Date(b.declarationDate).getTime() -
       new Date(a.declarationDate).getTime(),
   );
+  const showPrograms = records.some((record) => record.programsActivated.length > 0);
 
   return (
     <div className="overflow-x-auto rounded-lg border border-gray-200">
@@ -45,9 +47,11 @@ export default function FemaDeclarationList({
             <th scope="col" className="px-4 py-3 text-left whitespace-nowrap">
               County / Area
             </th>
-            <th scope="col" className="px-4 py-3 text-left">
-              Programs Activated
-            </th>
+            {showPrograms && (
+              <th scope="col" className="px-4 py-3 text-left">
+                Programs Activated
+              </th>
+            )}
           </tr>
         </thead>
         <tbody>
@@ -59,8 +63,11 @@ export default function FemaDeclarationList({
               <td className="px-4 py-2 font-mono whitespace-nowrap">
                 {record.declarationNumber}
               </td>
-              <td className="px-4 py-2 whitespace-nowrap">
-                {record.disasterType}
+              <td className="px-4 py-2">
+                <div className="whitespace-nowrap">{record.disasterType}</div>
+                {record.title && (
+                  <div className="text-xs text-gray-500 mt-0.5">{record.title}</div>
+                )}
               </td>
               <td className="px-4 py-2 whitespace-nowrap">
                 {record.declarationDate}
@@ -68,9 +75,11 @@ export default function FemaDeclarationList({
               <td className="px-4 py-2 whitespace-nowrap">
                 {record.county ?? 'Statewide'}
               </td>
-              <td className="px-4 py-2">
-                {record.programsActivated.join(', ')}
-              </td>
+              {showPrograms && (
+                <td className="px-4 py-2">
+                  {record.programsActivated.join(', ')}
+                </td>
+              )}
             </tr>
           ))}
         </tbody>

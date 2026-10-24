@@ -108,11 +108,7 @@ export function computeGroupStats(
  * 3. For each pair: compute stats → normalize → score → generate explanation
  * 4. Return PriorityCardData objects
  */
-export function buildPriorityCards(
-  records: Request311[],
-  allNeighborhoods: string[],
-  ejFlagsByNeighborhood: Map<string, boolean>
-): PriorityCardData[] {
+export function buildPriorityCards(records: Request311[]): PriorityCardData[] {
   // Step 1: find all distinct pairs with at least one record
   const pairSet = new Set<string>();
   for (const r of records) {
@@ -148,14 +144,11 @@ export function buildPriorityCards(
     const key = `${neighborhood}\0${serviceTopic}`;
     const stats = statsCache.get(key)!;
 
-    const hasOutreachFlag = ejFlagsByNeighborhood.get(neighborhood) ?? false;
-
     const raw: RawScoreInputs = {
       openCount: stats.openCount,
       groupCount: stats.totalCount,
       closedCount: stats.closedCount,
       onTimeClosedCount: stats.onTimeClosedCount,
-      hasOutreachFlag,
     };
 
     const normalizedInputs = normalizeScoreInputs(raw, maxima);
@@ -174,7 +167,6 @@ export function buildPriorityCards(
       openPressure: normalizedInputs.openCasePressure,
       repeatedPressure: normalizedInputs.repeatedPressure,
       onTimePressure: normalizedInputs.onTimePressure,
-      outreachFlag: hasOutreachFlag,
       plainExplanation,
       openCount: stats.openCount,
       totalCount: stats.totalCount,

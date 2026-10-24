@@ -5,7 +5,7 @@
  * cannot show, and provides official source links for each.
  */
 
-import { DATA_SNAPSHOT_DATE } from '@/data/loaders';
+import { ALL_EJ_RECORDS, DATA_SNAPSHOT_DATE } from '@/data/loaders';
 
 export const metadata = {
   title: 'Data Sources & Limitations — CivicPulse',
@@ -28,9 +28,9 @@ export default function DataLimitationsPage() {
         {/* Introductory paragraph                                           */}
         {/* ---------------------------------------------------------------- */}
         <p className="text-gray-700 leading-relaxed">
-          CivicPulse uses synthetic demonstration data modeled on publicly
-          available datasets. This page explains what each dataset contains,
-          what it cannot show, and where to find the official sources.
+          CivicPulse uses saved, de-identified Hackachusetts starter-kit
+          extracts. This page explains what each dataset contains, what it
+          cannot show, and where to find the official sources.
         </p>
       </div>
 
@@ -47,25 +47,31 @@ export default function DataLimitationsPage() {
 
         <div className="space-y-2 text-gray-700 leading-relaxed">
           <p>
-            <strong>What it contains:</strong> Synthetic records modeled on
-            Boston&#39;s 311 non-emergency service request system. Fields include
+            <strong>What it contains:</strong> A saved, de-identified extract
+            of Boston&#39;s 311 non-emergency service requests. Fields include
             service topic, neighborhood, department, case status, submission
-            date, close date, and on-time resolution flag.
+            date, and an on-time status.
           </p>
           <p>
             <strong>What it shows:</strong> Patterns of service demand by
             neighborhood and service type over time.
           </p>
           <p>
+            <strong>How CivicPulse maps the extract:</strong> Rows whose source
+            status is <em>Closed</em> are shown as closed; all other source
+            statuses are shown as open for review. The source on-time field is
+            used as the dashboard&#39;s on-time status.
+          </p>
+          <p>
             <strong>What it cannot show:</strong> Individual resident
-            information, exact addresses, real case outcomes, or current
-            operational status. This data is synthetic and for demonstration
-            only.
+            information, exact addresses, source case IDs, close dates, or
+            current operational status. This is a saved extract, not a live
+            feed.
           </p>
         </div>
 
         <p className="text-sm text-gray-500">
-          Sample snapshot date: {DATA_SNAPSHOT_DATE}
+          Starter-kit snapshot date: {DATA_SNAPSHOT_DATE}
         </p>
 
         <p>
@@ -94,19 +100,20 @@ export default function DataLimitationsPage() {
 
         <div className="space-y-2 text-gray-700 leading-relaxed">
           <p>
-            <strong>What it contains:</strong> A neighborhood-level flag
-            indicating whether a neighborhood is associated with aggregate
-            environmental justice outreach context, based on publicly available
-            Massachusetts EJ population criteria.
+            <strong>What it contains:</strong> A saved MassGIS extract of
+            environmental-justice block groups. The supplied extract contains{' '}
+            {ALL_EJ_RECORDS[0]?.flaggedBlockGroupCount ?? 0} rows flagged
+            EJ=Yes for the municipality of Boston.
           </p>
           <p>
-            <strong>What it shows:</strong> Which neighborhoods have been
-            associated with EJ outreach context in aggregate public data.
+            <strong>What it shows:</strong> Citywide context only. The source
+            extract does not provide a reliable mapping from block groups to
+            the Boston neighborhoods used by this dashboard.
           </p>
           <p>
             <strong>What it cannot show:</strong> Individual resident
-            characteristics, income, race, or any personal information. The flag
-            is a binary neighborhood-level indicator only.
+            characteristics, income, race, or any personal information. It
+            does not support a neighborhood-level claim in CivicPulse.
           </p>
         </div>
 
@@ -115,14 +122,13 @@ export default function DataLimitationsPage() {
           role="note"
           className="bg-blue-50 border-l-4 border-blue-400 px-4 py-3 rounded-r text-blue-900 text-sm leading-relaxed"
         >
-          This flag represents aggregate neighborhood-level outreach context
-          only. It does not profile individual residents, does not constitute an
-          official environmental justice determination, and does not imply any
-          enforcement or eligibility decision.
+          The EJ extract is not used in priority scores. It is included as
+          citywide context only, does not profile individual residents, and
+          does not constitute an official environmental justice determination.
         </div>
 
         <p className="text-sm text-gray-500">
-          Sample snapshot date: {DATA_SNAPSHOT_DATE}
+          Starter-kit snapshot date: {DATA_SNAPSHOT_DATE}
         </p>
 
         <p>
@@ -153,8 +159,8 @@ export default function DataLimitationsPage() {
         <div className="space-y-2 text-gray-700 leading-relaxed">
           <p>
             <strong>What it contains:</strong> Historical FEMA Major Disaster
-            Declarations for Massachusetts, drawn from the FEMA OpenFEMA public
-            dataset.
+            Declarations for Massachusetts, from the OpenFEMA public dataset
+            supplied in the Hackachusetts starter kit.
           </p>
           <p>
             <strong>What it shows:</strong> A record of past federally declared
@@ -179,7 +185,7 @@ export default function DataLimitationsPage() {
         </div>
 
         <p className="text-sm text-gray-500">
-          Sample snapshot date: {DATA_SNAPSHOT_DATE}
+          Starter-kit snapshot date: {DATA_SNAPSHOT_DATE}
         </p>
 
         <p>

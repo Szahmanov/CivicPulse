@@ -17,7 +17,6 @@ const mockCard: PriorityCardData = {
   openPressure: 0.8,
   repeatedPressure: 0.7,
   onTimePressure: 0.6,
-  outreachFlag: true,
   plainExplanation: 'In Roxbury, there are 5 open Pothole cases.',
   openCount: 5,
   totalCount: 20,
@@ -102,7 +101,7 @@ describe('ActionBriefPanel rendering', () => {
 
   it('renders data source field', () => {
     render(<ActionBriefPanel card={mockCard} snapshotDate={snapshotDate} />);
-    expect(screen.getByText(/Boston 311 Open Data/i)).toBeInTheDocument();
+    expect(screen.getByText(/Boston 311 starter-kit extract/i)).toBeInTheDocument();
   });
 
   it('renders snapshot date', () => {

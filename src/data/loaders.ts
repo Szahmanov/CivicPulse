@@ -17,7 +17,7 @@ import type {
   EJOutreachFile,
   FemaDeclarationsFile,
   Request311,
-  EJOutreachContext,
+  EJCitywideContext,
   FemaDeclaration,
 } from '../types/index';
 
@@ -43,14 +43,15 @@ const Request311Schema = z.object({
   onTimeResolution: z.boolean().nullable(),
 });
 
-const EJOutreachContextSchema = z.object({
-  neighborhood: z.string(),
-  hasOutreachFlag: z.boolean(),
+const EJCitywideContextSchema = z.object({
+  municipality: z.string(),
+  flaggedBlockGroupCount: z.number().int().nonnegative(),
   note: z.string(),
 });
 
 const FemaDeclarationSchema = z.object({
   declarationNumber: z.string(),
+  title: z.string().optional(),
   disasterType: z.string(),
   declarationDate: z.string(),
   state: z.string(),
@@ -65,7 +66,7 @@ const Requests311FileSchema = z.object({
 
 const EJOutreachFileSchema = z.object({
   meta: DataFileMetaSchema,
-  records: z.array(EJOutreachContextSchema),
+  records: z.array(EJCitywideContextSchema),
 });
 
 const FemaDeclarationsFileSchema = z.object({
@@ -91,9 +92,9 @@ export const femaData: FemaDeclarationsFile =
 // ---------------------------------------------------------------------------
 
 export const ALL_311_RECORDS: Request311[] = requests311Data.records;
-export const ALL_EJ_RECORDS: EJOutreachContext[] = ejOutreachData.records;
+export const ALL_EJ_RECORDS: EJCitywideContext[] = ejOutreachData.records;
 export const ALL_FEMA_RECORDS: FemaDeclaration[] = femaData.records;
 export const DATA_SNAPSHOT_DATE: string = requests311Data.meta.snapshotDate;
 export const ALL_NEIGHBORHOODS: string[] = [
-  ...new Set(ALL_EJ_RECORDS.map((r) => r.neighborhood)),
+  ...new Set(ALL_311_RECORDS.map((r) => r.neighborhood)),
 ].sort();

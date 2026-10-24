@@ -257,7 +257,6 @@ function makePriorityCard(overrides: Partial<PriorityCardData> = {}): PriorityCa
     openPressure: 0.5,
     repeatedPressure: 0.5,
     onTimePressure: 0.5,
-    outreachFlag: false,
     plainExplanation: '',
     openCount: 5,
     totalCount: 10,

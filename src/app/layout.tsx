@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SitewideLayout from "@/components/SitewideLayout";
+import { DATA_SNAPSHOT_DATE } from "@/data/loaders";
 
 export const metadata: Metadata = {
   title: "CivicPulse",
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased bg-gray-50">
-        <SitewideLayout snapshotDate="2024-01-15">
+        <SitewideLayout snapshotDate={DATA_SNAPSHOT_DATE}>
           {children}
         </SitewideLayout>
       </body>
