@@ -14,8 +14,7 @@ import type { ScoreInputs, ScoreResult } from '../types/index';
 export interface RawScoreInputs {
   openCount: number;         // raw count of open cases in this group
   groupCount: number;        // raw count of all requests in this group (for repeat pressure)
-  closedCount: number;       // raw count of closed cases in this group
-  onTimeClosedCount: number; // raw count of closed cases resolved on time
+  overdueCount: number;      // all requests marked overdue by the city on-time field
 }
 
 export interface Maxima {
@@ -29,7 +28,12 @@ export interface Maxima {
 
 export const WEIGHT_OPEN = 40;
 export const WEIGHT_REPEATED = 35;
-export const WEIGHT_ONTIME = 25;
+export const WEIGHT_OVERDUE = 25;
+
+/** Rounds a normalised value to the whole percentage displayed in the UI. */
+export function toWholePercent(value: number): number {
+  return Math.round(value * 100);
+}
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -52,9 +56,9 @@ export function clamp(value: number, min: number, max: number): number {
  * Rules:
  *  - openCasePressure   = raw.openCount  / max(maxima.maxOpenCount, 1)
  *  - repeatedPressure   = raw.groupCount / max(maxima.maxGroupCount, 1)
- *  - onTimePressure     = 1 − (raw.onTimeClosedCount / max(raw.closedCount, 1))
- *                         but 0 when raw.closedCount === 0 (absence of evidence
- *                         is not evidence of failure)
+ *  - overduePressure    = raw.overdueCount / max(raw.groupCount, 1)
+ *                         using every request in the group whose city on-time
+ *                         field is explicitly `false`
  *
  * All outputs are clamped to [0, 1].
  */
@@ -74,19 +78,16 @@ export function normalizeScoreInputs(
     1
   );
 
-  const onTimePressure =
-    raw.closedCount === 0
-      ? 0
-      : clamp(
-          1 - raw.onTimeClosedCount / Math.max(raw.closedCount, 1),
-          0,
-          1
-        );
+  const overduePressure = clamp(
+    raw.overdueCount / Math.max(raw.groupCount, 1),
+    0,
+    1,
+  );
 
   return {
     openCasePressure,
     repeatedPressure,
-    onTimePressure,
+    overduePressure,
   };
 }
 
@@ -96,7 +97,7 @@ export function normalizeScoreInputs(
  * Formula:
  *   rawScore = openCasePressure * 40
  *            + repeatedPressure * 35
- *            + onTimePressure   * 25
+ *            + overduePressure  * 25
  *   score = clamp(rawScore, 0, 100), rounded to 2 decimal places
  *
  * The `inputs` and `normalizedInputs` fields of the returned ScoreResult
@@ -107,7 +108,7 @@ export function computePriorityScore(inputs: ScoreInputs): ScoreResult {
   const rawScore =
     inputs.openCasePressure * WEIGHT_OPEN +
     inputs.repeatedPressure * WEIGHT_REPEATED +
-    inputs.onTimePressure * WEIGHT_ONTIME;
+    inputs.overduePressure * WEIGHT_OVERDUE;
 
   const score = Math.round(clamp(rawScore, 0, 100) * 100) / 100;
 
@@ -134,40 +135,40 @@ export function generatePlainExplanation(
   neighborhood: string,
   serviceTopic: string
 ): string {
-  const onTimeRate =
-    raw.closedCount > 0
-      ? Math.round(
-          (raw.onTimeClosedCount / raw.closedCount) * 100
-        )
-      : null;
-
-  const latePercent = onTimeRate !== null ? 100 - onTimeRate : null;
+  const overduePercent = toWholePercent(
+    raw.overdueCount / Math.max(raw.groupCount, 1),
+  );
 
   const parts: string[] = [];
 
   // Open cases sentence
-  parts.push(
-    `In ${neighborhood}, there are ${raw.openCount} open ${serviceTopic} ` +
-      `case${raw.openCount !== 1 ? 's' : ''} that haven't been resolved yet.`
-  );
+  if (raw.openCount === 0) {
+    parts.push(`All ${raw.groupCount} requests in this group are closed.`);
+  } else if (raw.openCount === 1) {
+    parts.push(
+      `In ${neighborhood}, there is 1 open ${serviceTopic} case that hasn't been resolved yet.`,
+    );
+  } else {
+    parts.push(
+      `In ${neighborhood}, there are ${raw.openCount} open ${serviceTopic} cases that haven't been resolved yet.`,
+    );
+  }
 
   // Repeated pattern sentence
-  if (raw.groupCount > 1) {
+  if (raw.groupCount >= 5) {
     parts.push(
       `This type of request has come up ${raw.groupCount} times in this area, ` +
         `suggesting a repeated pattern.`
     );
   }
 
-  // On-time resolution sentence
-  if (latePercent !== null && latePercent > 0) {
+  // Overdue city on-time-field sentence
+  if (raw.overdueCount > 0) {
     parts.push(
-      `Of the cases that were closed, ${latePercent}% were resolved later than expected.`
+      `${raw.overdueCount} of ${raw.groupCount} requests (${overduePercent}%) are marked overdue by the city on-time field.`,
     );
-  } else if (raw.closedCount === 0) {
-    parts.push(`There are no closed cases to evaluate resolution timing.`);
   } else {
-    parts.push(`All closed cases in this area were resolved on time.`);
+    parts.push(`No requests in this group are marked overdue by the city on-time field.`);
   }
 
   return parts.join(' ');

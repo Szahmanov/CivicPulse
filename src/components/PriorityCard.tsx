@@ -3,13 +3,14 @@
 /**
  * PriorityCard — renders one priority review card with:
  *   - Header row: neighborhood, service topic, score badge
- *   - Score component bars (4 normalized pressure bars)
+ *   - Score component bars (3 normalized pressure bars)
  *   - Plain-language explanation (always visible)
  *   - Action Brief toggle (expand/collapse via useState)
  */
 
 import { useState } from 'react';
 import type { PriorityCardData } from '@/types/index';
+import { toWholePercent } from '@/data/scoring';
 import ActionBriefPanel from './ActionBriefPanel';
 
 export interface PriorityCardProps {
@@ -42,10 +43,11 @@ interface PressureBarProps {
   value: number; // 0–1 normalized
   rawAnnotation: string;
   ariaLabel: string;
+  percentageLabel?: string;
 }
 
-function PressureBar({ label, value, rawAnnotation, ariaLabel }: PressureBarProps) {
-  const pct = Math.round(value * 100);
+function PressureBar({ label, value, rawAnnotation, ariaLabel, percentageLabel = 'of max' }: PressureBarProps) {
+  const pct = toWholePercent(value);
   return (
     <div className="flex flex-col gap-1">
       <div className="flex items-center justify-between text-xs text-gray-600">
@@ -62,7 +64,7 @@ function PressureBar({ label, value, rawAnnotation, ariaLabel }: PressureBarProp
           style={{ width: `${pct}%` }}
         />
       </div>
-      <div className="text-xs text-gray-400 text-right">{pct}% of max</div>
+      <div className="text-xs text-gray-400 text-right">{pct}% {percentageLabel}</div>
     </div>
   );
 }
@@ -79,8 +81,6 @@ export default function PriorityCard({
 
   const badgeClasses = getScoreBadgeClasses(card.score);
   const scoreLabel = getScoreLabel(card.score);
-
-  const lateCount = card.closedCount - card.onTimeCount;
 
   return (
     <article
@@ -101,8 +101,6 @@ export default function PriorityCard({
         <div className={`flex-shrink-0 flex flex-col items-end gap-0.5 px-3 py-1.5 rounded-full text-sm font-semibold ${badgeClasses}`}>
           <span>Score: {card.score}/100</span>
           <span className="text-xs font-normal">{scoreLabel}</span>
-          {/* Screen-reader-only disclaimer */}
-          <span className="sr-only">This score is not an official city decision.</span>
         </div>
       </div>
 
@@ -114,19 +112,20 @@ export default function PriorityCard({
           label="Open case pressure"
           value={card.openPressure}
           rawAnnotation={`${card.openCount} open cases`}
-          ariaLabel={`Open case pressure: ${Math.round(card.openPressure * 100)}% of max. ${card.openCount} open cases.`}
+          ariaLabel={`Open case pressure: ${toWholePercent(card.openPressure)}% of max. ${card.openCount} open cases.`}
         />
         <PressureBar
           label="Repeat requests"
           value={card.repeatedPressure}
           rawAnnotation={`${card.totalCount} total requests`}
-          ariaLabel={`Repeat request pressure: ${Math.round(card.repeatedPressure * 100)}% of max. ${card.totalCount} total requests.`}
+          ariaLabel={`Repeat request pressure: ${toWholePercent(card.repeatedPressure)}% of max. ${card.totalCount} total requests.`}
         />
         <PressureBar
-          label="Delayed resolutions"
-          value={card.onTimePressure}
-          rawAnnotation={`${lateCount} of ${card.closedCount} closed late`}
-          ariaLabel={`Delayed resolution pressure: ${Math.round(card.onTimePressure * 100)}% of max. ${lateCount} of ${card.closedCount} closed late.`}
+          label="Overdue (city on-time field)"
+          value={card.overduePressure}
+          rawAnnotation={`${card.overdueCount} of ${card.totalCount} marked overdue`}
+          ariaLabel={`Overdue (city on-time field): ${toWholePercent(card.overduePressure)}% marked overdue. ${card.overdueCount} of ${card.totalCount} marked overdue.`}
+          percentageLabel="marked overdue"
         />
       </div>
 

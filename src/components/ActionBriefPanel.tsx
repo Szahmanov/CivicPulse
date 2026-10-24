@@ -51,7 +51,7 @@ export default function ActionBriefPanel({ card, snapshotDate }: ActionBriefPane
         <div>
           <dt className="font-semibold text-gray-800 mb-0.5">Limitations</dt>
           <dd className="text-gray-600">
-            This is a saved 2026-10-18 extract, not a live feed. CivicPulse is not an official
+            This score is not an official city decision. This is a saved 2026-10-18 extract, not a live feed. CivicPulse is not an official
             City of Boston service and does not make enforcement, benefit, emergency, or eligibility
             decisions. Scores use raw counts and are for review prioritization only.
           </dd>

@@ -14,6 +14,9 @@ import {
   type Maxima,
 } from './scoring';
 
+/** Minimum requests a neighborhood-and-topic group needs before it is ranked. */
+export const MIN_GROUP_SIZE = 5;
+
 // ---------------------------------------------------------------------------
 // Neighborhood aggregation
 // ---------------------------------------------------------------------------
@@ -79,8 +82,7 @@ export function computeGroupStats(
 ): {
   totalCount: number;
   openCount: number;
-  closedCount: number;
-  onTimeClosedCount: number;
+  overdueCount: number;
 } {
   const groupRecords = records.filter(
     (r) => r.neighborhood === neighborhood && r.serviceTopic === serviceTopic
@@ -88,11 +90,9 @@ export function computeGroupStats(
 
   const totalCount = groupRecords.length;
   const openCount = groupRecords.filter((r) => r.status === 'open').length;
-  const closedRecords = groupRecords.filter((r) => r.status === 'closed');
-  const closedCount = closedRecords.length;
-  const onTimeClosedCount = closedRecords.filter((r) => r.onTimeResolution === true).length;
+  const overdueCount = groupRecords.filter((r) => r.onTimeResolution === false).length;
 
-  return { totalCount, openCount, closedCount, onTimeClosedCount };
+  return { totalCount, openCount, overdueCount };
 }
 
 // ---------------------------------------------------------------------------
@@ -103,7 +103,7 @@ export function computeGroupStats(
  * Builds the full array of PriorityCardData from raw records.
  *
  * Pipeline:
- * 1. Find all distinct neighborhood + serviceTopic pairs with at least one record
+ * 1. Find all distinct neighborhood + serviceTopic pairs with at least MIN_GROUP_SIZE records
  * 2. Compute maxima across all pairs (maxOpenCount, maxGroupCount)
  * 3. For each pair: compute stats → normalize → score → generate explanation
  * 4. Return PriorityCardData objects
@@ -118,7 +118,9 @@ export function buildPriorityCards(records: Request311[]): PriorityCardData[] {
   const pairs = [...pairSet].map((key) => {
     const [neighborhood, serviceTopic] = key.split('\0');
     return { neighborhood, serviceTopic };
-  });
+  }).filter(({ neighborhood, serviceTopic }) =>
+    computeGroupStats(records, neighborhood, serviceTopic).totalCount >= MIN_GROUP_SIZE,
+  );
 
   if (pairs.length === 0) return [];
 
@@ -147,8 +149,7 @@ export function buildPriorityCards(records: Request311[]): PriorityCardData[] {
     const raw: RawScoreInputs = {
       openCount: stats.openCount,
       groupCount: stats.totalCount,
-      closedCount: stats.closedCount,
-      onTimeClosedCount: stats.onTimeClosedCount,
+      overdueCount: stats.overdueCount,
     };
 
     const normalizedInputs = normalizeScoreInputs(raw, maxima);
@@ -166,12 +167,11 @@ export function buildPriorityCards(records: Request311[]): PriorityCardData[] {
       score: scoreResult.score,
       openPressure: normalizedInputs.openCasePressure,
       repeatedPressure: normalizedInputs.repeatedPressure,
-      onTimePressure: normalizedInputs.onTimePressure,
+      overduePressure: normalizedInputs.overduePressure,
       plainExplanation,
       openCount: stats.openCount,
       totalCount: stats.totalCount,
-      closedCount: stats.closedCount,
-      onTimeCount: stats.onTimeClosedCount,
+      overdueCount: stats.overdueCount,
     });
   }
 

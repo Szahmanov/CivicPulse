@@ -35,14 +35,13 @@ const requestArbitrary: fc.Arbitrary<Request311> = fc.record({
 const scoreInputsArbitrary: fc.Arbitrary<ScoreInputs> = fc.record({
   openCasePressure: fc.double({ min: 0, max: 1, noNaN: true }),
   repeatedPressure: fc.double({ min: 0, max: 1, noNaN: true }),
-  onTimePressure: fc.double({ min: 0, max: 1, noNaN: true }),
+  overduePressure: fc.double({ min: 0, max: 1, noNaN: true }),
 });
 
 const rawScoreInputsArbitrary: fc.Arbitrary<RawScoreInputs> = fc.record({
   openCount: fc.integer({ min: 0, max: 1_000 }),
   groupCount: fc.integer({ min: 0, max: 1_000 }),
-  closedCount: fc.integer({ min: 0, max: 1_000 }),
-  onTimeClosedCount: fc.integer({ min: 0, max: 1_000 }),
+  overdueCount: fc.integer({ min: 0, max: 1_000 }),
 });
 
 const priorityCardArbitrary: fc.Arbitrary<PriorityCardData> = fc.record({
@@ -51,12 +50,11 @@ const priorityCardArbitrary: fc.Arbitrary<PriorityCardData> = fc.record({
   score: fc.integer({ min: -100, max: 200 }),
   openPressure: fc.double({ min: 0, max: 1, noNaN: true }),
   repeatedPressure: fc.double({ min: 0, max: 1, noNaN: true }),
-  onTimePressure: fc.double({ min: 0, max: 1, noNaN: true }),
+  overduePressure: fc.double({ min: 0, max: 1, noNaN: true }),
   plainExplanation: fc.string(),
   openCount: fc.integer({ min: 0, max: 100 }),
   totalCount: fc.integer({ min: 0, max: 100 }),
-  closedCount: fc.integer({ min: 0, max: 100 }),
-  onTimeCount: fc.integer({ min: 0, max: 100 }),
+  overdueCount: fc.integer({ min: 0, max: 100 }),
 });
 
 function filtersFor(records: Request311[], choices: boolean[]): FilterState {
@@ -126,8 +124,8 @@ describe('property-based invariants', () => {
           expect(normalized.openCasePressure).toBeLessThanOrEqual(1);
           expect(normalized.repeatedPressure).toBeGreaterThanOrEqual(0);
           expect(normalized.repeatedPressure).toBeLessThanOrEqual(1);
-          expect(normalized.onTimePressure).toBeGreaterThanOrEqual(0);
-          expect(normalized.onTimePressure).toBeLessThanOrEqual(1);
+          expect(normalized.overduePressure).toBeGreaterThanOrEqual(0);
+          expect(normalized.overduePressure).toBeLessThanOrEqual(1);
 
           const first = computePriorityScore(inputs).score;
           const second = computePriorityScore(inputs).score;

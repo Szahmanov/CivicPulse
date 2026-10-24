@@ -6,7 +6,13 @@
 import { describe, it, expect } from 'vitest';
 import type { Request311, FilterState } from '../../types/index';
 import { DEFAULT_FILTER_STATE, matchesFilter, applyFilters } from '../filters';
-import { aggregateByNeighborhood, sortByScore } from '../aggregations';
+import {
+  aggregateByNeighborhood,
+  buildPriorityCards,
+  computeGroupStats,
+  MIN_GROUP_SIZE,
+  sortByScore,
+} from '../aggregations';
 import type { PriorityCardData } from '../../types/index';
 
 // ---------------------------------------------------------------------------
@@ -245,6 +251,32 @@ describe('aggregateByNeighborhood', () => {
   });
 });
 
+describe('priority-group eligibility and overdue evidence', () => {
+  it('ranks only groups with at least MIN_GROUP_SIZE requests and counts overdue open records', () => {
+    const qualifying = Array.from({ length: MIN_GROUP_SIZE }, (_, index) =>
+      makeRecord({
+        caseId: `Q${index}`,
+        neighborhood: 'Roxbury',
+        serviceTopic: 'Pothole',
+        status: index === 0 ? 'open' : 'closed',
+        onTimeResolution: index < 2 ? false : true,
+      }),
+    );
+    const tooSmall = [
+      makeRecord({ caseId: 'S1', neighborhood: 'Allston', serviceTopic: 'Graffiti', onTimeResolution: false }),
+      makeRecord({ caseId: 'S2', neighborhood: 'Allston', serviceTopic: 'Graffiti', onTimeResolution: true }),
+    ];
+    const records = [...qualifying, ...tooSmall];
+
+    expect(computeGroupStats(records, 'Roxbury', 'Pothole')).toMatchObject({
+      totalCount: MIN_GROUP_SIZE,
+      overdueCount: 2,
+    });
+    expect(buildPriorityCards(records)).toHaveLength(1);
+    expect(buildPriorityCards(records)[0].overdueCount).toBe(2);
+  });
+});
+
 // ---------------------------------------------------------------------------
 // sortByScore tests
 // ---------------------------------------------------------------------------
@@ -256,12 +288,11 @@ function makePriorityCard(overrides: Partial<PriorityCardData> = {}): PriorityCa
     score: 50,
     openPressure: 0.5,
     repeatedPressure: 0.5,
-    onTimePressure: 0.5,
+    overduePressure: 0.5,
     plainExplanation: '',
     openCount: 5,
     totalCount: 10,
-    closedCount: 5,
-    onTimeCount: 3,
+    overdueCount: 2,
     ...overrides,
   };
 }

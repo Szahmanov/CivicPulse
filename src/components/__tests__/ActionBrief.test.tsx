@@ -16,12 +16,11 @@ const mockCard: PriorityCardData = {
   score: 72,
   openPressure: 0.8,
   repeatedPressure: 0.7,
-  onTimePressure: 0.6,
+  overduePressure: 0.6,
   plainExplanation: 'In Roxbury, there are 5 open Pothole cases.',
   openCount: 5,
   totalCount: 20,
-  closedCount: 15,
-  onTimeCount: 10,
+  overdueCount: 5,
 };
 
 // ---------------------------------------------------------------------------

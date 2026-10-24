@@ -8,7 +8,7 @@
  * cards via useMemo for efficient re-computation on filter changes.
  */
 
-import { useMemo, Suspense } from 'react';
+import { useEffect, useMemo, useState, Suspense } from 'react';
 
 import {
   ALL_311_RECORDS,
@@ -19,6 +19,7 @@ import { applyFilters } from '@/data/filters';
 import {
   aggregateByNeighborhood,
   buildPriorityCards,
+  MIN_GROUP_SIZE,
   sortByScore,
 } from '@/data/aggregations';
 
@@ -42,12 +43,15 @@ const ALL_DEPARTMENTS: string[] = [
   ...new Set(ALL_311_RECORDS.map((r) => r.department)),
 ].sort();
 
+const CARDS_PER_PAGE = 10;
+
 // ---------------------------------------------------------------------------
 // Inner component (needs access to context)
 // ---------------------------------------------------------------------------
 
 function DashboardContent() {
   const { filters } = useFilterContext();
+  const [visibleCardCount, setVisibleCardCount] = useState(CARDS_PER_PAGE);
 
   const filtered = useMemo(
     () => applyFilters(ALL_311_RECORDS, filters),
@@ -63,6 +67,13 @@ function DashboardContent() {
     () => sortByScore(buildPriorityCards(filtered)),
     [filtered]
   );
+
+  useEffect(() => {
+    setVisibleCardCount(CARDS_PER_PAGE);
+  }, [filters]);
+
+  const visibleCards = cards.slice(0, visibleCardCount);
+  const remainingCardCount = cards.length - visibleCards.length;
 
   // Derived summary stats from filtered records
   const totalCount = filtered.length;
@@ -130,9 +141,15 @@ function DashboardContent() {
       <section aria-label="Priority review cards">
         <h2 className="text-xl font-bold text-gray-900 mb-1">Priority Review Cards</h2>
         <p className="text-xs text-gray-500 mb-4">
-          Cards are ranked by a combination of open-case pressure, repeat patterns, and on-time
-          status. Scores use raw counts, so larger neighborhoods may rank higher. This ranking is
-          for review prioritization only — it is not an official city decision.
+          Cards are ranked by a combination of open-case pressure, repeat patterns, and the city
+          on-time field. Scores use raw counts, so larger neighborhoods may rank higher.
+        </p>
+
+        <p className="text-xs text-gray-600 mb-2">
+          Groups with fewer than {MIN_GROUP_SIZE} requests in this window are not ranked.
+        </p>
+        <p className="text-xs text-gray-600 mb-4">
+          This score is not an official city decision.
         </p>
 
         {cards.length === 0 && filtered.length > 0 && (
@@ -142,8 +159,8 @@ function DashboardContent() {
         )}
 
         {cards.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-            {cards.map((card) => (
+          <div id="priority-review-card-list" className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            {visibleCards.map((card) => (
               <PriorityCard
                 key={`${card.neighborhood}__${card.serviceTopic}`}
                 card={card}
@@ -151,6 +168,17 @@ function DashboardContent() {
               />
             ))}
           </div>
+        )}
+
+        {remainingCardCount > 0 && (
+          <button
+            type="button"
+            aria-controls="priority-review-card-list"
+            onClick={() => setVisibleCardCount((count) => count + CARDS_PER_PAGE)}
+            className="mt-4 rounded border border-blue-600 px-4 py-2 text-sm font-medium text-blue-700 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Show more ({Math.min(CARDS_PER_PAGE, remainingCardCount)} more)
+          </button>
         )}
       </section>
     </div>

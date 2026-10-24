@@ -136,7 +136,7 @@ interface PriorityCardProps {
   score:           number;           // 0–100
   openPressure:    number;           // 0–1 normalised
   repeatedPressure: number;          // 0–1 normalised
-  onTimePressure:  number;           // 0–1 normalised (inverse on-time rate)
+  overduePressure: number;           // 0–1 normalised (city on-time field marked overdue)
   plainExplanation: string;
   actionBrief:     ActionBrief;
 }
@@ -269,7 +269,7 @@ interface GroupKey {
 interface ScoreInputs {
   openCasePressure:     number; // 0–1
   repeatedPressure:     number; // 0–1
-  onTimePressure:       number; // 0–1 (1 − on-time rate)
+  overduePressure:      number; // 0–1 (overdue records / all group records)
 }
 
 interface ScoreResult {
@@ -297,7 +297,7 @@ The function is **pure**: same inputs always produce the same output; no I/O, no
 Score = clamp(
   W_open   * openCasePressure
 + W_repeat * repeatedPressure
-+ W_ontime * onTimePressure
++ W_overdue * overduePressure
 , 0, 100
 )
 ```
@@ -308,7 +308,7 @@ Score = clamp(
 |---|---|---|
 | `openCasePressure` | 40 | Unresolved open cases represent current service demand; this is the most direct indicator of immediate need |
 | `repeatedPressure` | 35 | Persistent repeat requests in the same area suggest a systemic pattern rather than a one-off event |
-| `onTimePressure` | 25 | A low on-time resolution rate (high pressure value) indicates service-level failure, which compounds community impact |
+| `overduePressure` | 25 | Records marked overdue by the city on-time field identify patterns that may warrant human review. |
 
 The three weights sum to 100. Each component is pre-normalised to the range [0, 1] before multiplication, so the raw score is already in [0, 100]. `clamp` guards against floating-point edge cases.
 
@@ -316,8 +316,7 @@ The three weights sum to 100. Each component is pre-normalised to the range [0, 
 
 - **openCasePressure**: `openCount / max(openCount across all groups in view, 1)`
 - **repeatedPressure**: `groupCount / max(groupCount across all groups, 1)`
-- **onTimePressure**: `1 − (onTimeClosedCount / max(closedCount, 1))`  
-  (If no closed cases exist, pressure defaults to 0 — absence of evidence is not evidence of failure)
+- **overduePressure**: `overdueCount / max(groupCount, 1)`, where `overdueCount` includes every request whose city on-time field is explicitly `false`.
 
 Normalisation is performed in a separate pure function `normalizeScoreInputs(raw: RawScoreInputs, maxima: Maxima): ScoreInputs` so the score function itself only ever receives pre-normalised values.
 

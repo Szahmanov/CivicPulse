@@ -42,12 +42,11 @@ const MOCK_CARD: PriorityCardData = {
   score: 72,
   openPressure: 0.6,
   repeatedPressure: 0.4,
-  onTimePressure: 0.3,
+  overduePressure: 0.3,
   plainExplanation: 'High volume of pothole cases with delayed resolutions.',
   openCount: 12,
   totalCount: 42,
-  closedCount: 30,
-  onTimeCount: 20,
+  overdueCount: 13,
 };
 
 const MOCK_FEMA_RECORDS: FemaDeclaration[] = [
@@ -86,7 +85,7 @@ describe('axe-core: zero violations', () => {
       <NeighborhoodTable
         aggregates={MOCK_AGGREGATES}
         snapshotDate="2024-01-15"
-        sourceLabel="Boston 311 Open Data (synthetic demo)"
+        sourceLabel="Boston 311 starter-kit extract (de-identified)"
       />
     );
     const results = await axe(container);

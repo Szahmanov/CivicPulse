@@ -74,7 +74,7 @@ export interface FemaDeclarationsFile {
 export interface ScoreInputs {
   openCasePressure: number; // 0-1 normalised
   repeatedPressure: number; // 0-1 normalised
-  onTimePressure: number; // 0-1 normalised (1 - on-time rate)
+  overduePressure: number; // 0-1 normalised (overdue share of all requests)
 }
 
 export interface ScoreResult {
@@ -105,10 +105,9 @@ export interface PriorityCardData {
   score: number; // 0-100
   openPressure: number; // 0-1 normalised
   repeatedPressure: number; // 0-1 normalised
-  onTimePressure: number; // 0-1 normalised
+  overduePressure: number; // 0-1 normalised
   plainExplanation: string;
   openCount: number; // raw count for display
   totalCount: number; // raw count for display
-  closedCount: number; // raw count for display
-  onTimeCount: number; // raw count for display
+  overdueCount: number; // requests whose city on-time field is false
 }
