@@ -120,7 +120,7 @@ export default function SitewideLayout({
                 </li>
                 <li>
                   <a
-                    href="https://www.mass.gov/info-details/environmental-justice-populations-in-massachusetts"
+                    href="https://www.mass.gov/info-details/massgis-data-2020-environmental-justice-populations"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="MA Environmental Justice Data on mass.gov (opens in new tab)"

@@ -43,9 +43,9 @@ The app ships with static, de-identified extracts supplied in the Hackachusetts 
 
 | Data context | In-app use | Official reference |
 | --- | --- | --- |
-| Boston 311 | 4,990 valid de-identified service-request rows from the supplied 5,000-row extract | [Boston 311 Open Data](https://data.boston.gov/) |
-| Environmental Justice | Citywide Boston block-group context only; it does not affect the score | [Massachusetts EJ population data](https://www.mass.gov/info-details/environmental-justice-populations-in-massachusetts) |
-| FEMA | 415 historical Massachusetts declaration rows from the supplied extract | [FEMA OpenFEMA](https://www.fema.gov/about/openfema) |
+| Boston 311 | 4,990 valid de-identified service-request rows from the supplied 5,000-row extract | [Boston 311 Service Requests](https://data.boston.gov/dataset/311-service-requests) |
+| Environmental Justice | Citywide Boston block-group context only; it does not affect the score | [MassGIS 2020 Environmental Justice Populations](https://www.mass.gov/info-details/massgis-data-2020-environmental-justice-populations) |
+| FEMA | 415 historical Massachusetts declaration rows from the supplied extract | [OpenFEMA Disaster Declarations Summaries v2](https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2) |
 
 No personal information is collected, shown, or used for profiling. The environmental-justice extract is not mapped to neighborhoods and does not affect priority scores. FEMA information is historical only; use official emergency channels for current information.
 

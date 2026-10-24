@@ -108,7 +108,7 @@ await writeJson('ej-outreach-context.json', {
     source:
       'MassGIS environmental justice block groups — Hackachusetts starter-kit extract',
     officialUrl:
-      'https://www.mass.gov/info-details/environmental-justice-populations-in-massachusetts',
+      'https://www.mass.gov/info-details/massgis-data-2020-environmental-justice-populations',
     limitations:
       'This extract is available at municipality and block-group level, not Boston-neighborhood level. It is shown as citywide context only and does not affect CivicPulse priority scores.',
   },
