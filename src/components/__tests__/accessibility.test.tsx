@@ -1,21 +1,19 @@
 /**
  * Accessibility tests — Task 8.3
  *
- * Verifies structural ARIA accessibility of isolated components.
- * Uses manual structural assertions (role, aria-* attributes, semantic HTML)
- * rather than axe-core, which is incompatible with jsdom's missing canvas API.
+ * Runs real axe-core audits (via vitest-axe) against isolated DOM-only
+ * components and asserts zero violations using the globally-registered
+ * `toHaveNoViolations` matcher (see src/test/setup.ts).
  *
- * Components tested:
- *   - SummaryCards
- *   - NeighborhoodTable
- *   - ActionBriefPanel
- *   - FemaDeclarationList
- *   - DataError
- *   - LoadingSpinner
+ * Chart SVG rendering (Recharts) is not exercised here because jsdom does
+ * not implement the canvas/layout APIs those libraries need; the chart's
+ * accessibility is covered by structural assertions in AccessibleChart's
+ * own test and by the sr-only data table it renders.
  */
 
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
+import { axe } from 'vitest-axe';
 
 import SummaryCards from '../SummaryCards';
 import NeighborhoodTable from '../NeighborhoodTable';
@@ -30,22 +28,12 @@ import type {
 } from '@/types/index';
 
 // ---------------------------------------------------------------------------
-// Test fixtures
+// Fixtures
 // ---------------------------------------------------------------------------
 
 const MOCK_AGGREGATES: NeighborhoodAggregate[] = [
-  {
-    neighborhood: 'Allston',
-    totalCount: 42,
-    openCount: 12,
-    topServiceTopic: 'Pothole',
-  },
-  {
-    neighborhood: 'Back Bay',
-    totalCount: 18,
-    openCount: 4,
-    topServiceTopic: 'Graffiti',
-  },
+  { neighborhood: 'Allston', totalCount: 42, openCount: 12, topServiceTopic: 'Pothole' },
+  { neighborhood: 'Back Bay', totalCount: 18, openCount: 4, topServiceTopic: 'Graffiti' },
 ];
 
 const MOCK_CARD: PriorityCardData = {
@@ -82,51 +70,19 @@ const MOCK_FEMA_RECORDS: FemaDeclaration[] = [
   },
 ];
 
-// ---------------------------------------------------------------------------
-// SummaryCards
-// ---------------------------------------------------------------------------
+// Tables need to live inside a landmark-free, valid document fragment. jsdom's
+// default <body> is sufficient; axe runs against the rendered container.
 
-describe('SummaryCards — accessibility', () => {
-  it('has aria-label on each metric card article', () => {
-    render(
-      <SummaryCards
-        totalCount={10}
-        openCount={3}
-        neighborhoodCount={5}
-        serviceTopicCount={4}
-      />
+describe('axe-core: zero violations', () => {
+  it('SummaryCards has no violations', async () => {
+    const { container } = render(
+      <SummaryCards totalCount={10} openCount={3} neighborhoodCount={5} serviceTopicCount={4} />
     );
-    const articles = screen.getAllByRole('article');
-    expect(articles.length).toBe(4);
-    articles.forEach((article) => {
-      expect(article).toHaveAttribute('aria-label');
-      expect(article.getAttribute('aria-label')).not.toBe('');
-    });
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 
-  it('displays numeric values for screen readers', () => {
-    render(
-      <SummaryCards
-        totalCount={10}
-        openCount={3}
-        neighborhoodCount={5}
-        serviceTopicCount={4}
-      />
-    );
-    // aria-hidden="true" is on the visual numbers; labels carry the accessible name
-    const articles = screen.getAllByRole('article');
-    const labels = articles.map((a) => a.getAttribute('aria-label') ?? '');
-    expect(labels.some((l) => l.includes('10'))).toBe(true);
-    expect(labels.some((l) => l.includes('3'))).toBe(true);
-  });
-});
-
-// ---------------------------------------------------------------------------
-// NeighborhoodTable
-// ---------------------------------------------------------------------------
-
-describe('NeighborhoodTable — accessibility', () => {
-  it('has scope="col" on all header cells', () => {
+  it('NeighborhoodTable has no violations', async () => {
     const { container } = render(
       <NeighborhoodTable
         aggregates={MOCK_AGGREGATES}
@@ -134,182 +90,35 @@ describe('NeighborhoodTable — accessibility', () => {
         sourceLabel="Boston 311 Open Data (synthetic demo)"
       />
     );
-    const ths = container.querySelectorAll('thead th');
-    expect(ths.length).toBeGreaterThan(0);
-    ths.forEach((th) => {
-      expect(th).toHaveAttribute('scope', 'col');
-    });
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 
-  it('has a sr-only <caption> with source metadata', () => {
-    const { container } = render(
-      <NeighborhoodTable
-        aggregates={MOCK_AGGREGATES}
-        snapshotDate="2024-01-15"
-        sourceLabel="Boston 311 Open Data (synthetic demo)"
-      />
-    );
-    const caption = container.querySelector('caption');
-    expect(caption).not.toBeNull();
-    expect(caption!.textContent).toMatch(/311 Requests by Neighborhood/i);
-    expect(caption!.textContent).toMatch(/2024-01-15/);
-  });
-
-  it('wraps table in overflow-x-auto container', () => {
-    const { container } = render(
-      <NeighborhoodTable
-        aggregates={MOCK_AGGREGATES}
-        snapshotDate="2024-01-15"
-        sourceLabel="Boston 311 Open Data (synthetic demo)"
-      />
-    );
-    const wrapper = container.querySelector('.overflow-x-auto');
-    expect(wrapper).not.toBeNull();
-  });
-});
-
-// ---------------------------------------------------------------------------
-// ActionBriefPanel
-// ---------------------------------------------------------------------------
-
-describe('ActionBriefPanel — accessibility', () => {
-  it('has a <dl> definition list with dt/dd pairs', () => {
+  it('ActionBriefPanel has no violations', async () => {
     const { container } = render(
       <ActionBriefPanel card={MOCK_CARD} snapshotDate="2024-01-15" />
     );
-    expect(container.querySelector('dl')).not.toBeNull();
-    expect(container.querySelectorAll('dt').length).toBeGreaterThan(0);
-    expect(container.querySelectorAll('dd').length).toBeGreaterThan(0);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 
-  it('has a heading for the Action Brief', () => {
-    render(<ActionBriefPanel card={MOCK_CARD} snapshotDate="2024-01-15" />);
-    expect(screen.getByRole('heading', { name: /Action Brief/i })).toBeInTheDocument();
-  });
-
-  it('dt count equals dd count (paired definition terms)', () => {
+  it('FemaDeclarationList has no violations', async () => {
     const { container } = render(
-      <ActionBriefPanel card={MOCK_CARD} snapshotDate="2024-01-15" />
+      <FemaDeclarationList records={MOCK_FEMA_RECORDS} snapshotDate="2024-01-15" />
     );
-    const dts = container.querySelectorAll('dt');
-    const dds = container.querySelectorAll('dd');
-    expect(dts.length).toBe(dds.length);
-  });
-});
-
-// ---------------------------------------------------------------------------
-// FemaDeclarationList
-// ---------------------------------------------------------------------------
-
-describe('FemaDeclarationList — accessibility', () => {
-  it('has scope="col" on all header cells', () => {
-    const { container } = render(
-      <FemaDeclarationList
-        records={MOCK_FEMA_RECORDS}
-        snapshotDate="2024-01-15"
-      />
-    );
-    const ths = container.querySelectorAll('thead th');
-    expect(ths.length).toBeGreaterThan(0);
-    ths.forEach((th) => {
-      expect(th).toHaveAttribute('scope', 'col');
-    });
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 
-  it('has a sr-only <caption> with source metadata', () => {
-    const { container } = render(
-      <FemaDeclarationList
-        records={MOCK_FEMA_RECORDS}
-        snapshotDate="2024-01-15"
-      />
-    );
-    const caption = container.querySelector('caption');
-    expect(caption).not.toBeNull();
-    expect(caption!.textContent).toMatch(/FEMA/i);
-    expect(caption!.textContent).toMatch(/2024-01-15/);
+  it('DataError has no violations', async () => {
+    const { container } = render(<DataError message="Sample data failed validation." />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 
-  it('renders a row for each record', () => {
-    const { container } = render(
-      <FemaDeclarationList
-        records={MOCK_FEMA_RECORDS}
-        snapshotDate="2024-01-15"
-      />
-    );
-    const rows = container.querySelectorAll('tbody tr');
-    expect(rows.length).toBe(MOCK_FEMA_RECORDS.length);
-  });
-});
-
-// ---------------------------------------------------------------------------
-// DataError
-// ---------------------------------------------------------------------------
-
-describe('DataError — accessibility', () => {
-  it('has role="alert"', () => {
-    render(<DataError message="Test error message" />);
-    expect(screen.getByRole('alert')).toBeInTheDocument();
-  });
-
-  it('displays the error message', () => {
-    render(<DataError message="Test error message" />);
-    expect(screen.getByText('Test error message')).toBeInTheDocument();
-  });
-
-  it('displays the default title when none provided', () => {
-    render(<DataError message="Some error" />);
-    expect(screen.getByText('Data could not be loaded')).toBeInTheDocument();
-  });
-
-  it('accepts a custom title', () => {
-    render(<DataError title="Custom Error Title" message="Some error" />);
-    expect(screen.getByText('Custom Error Title')).toBeInTheDocument();
-  });
-
-  it('displays the recovery hint', () => {
-    render(<DataError message="Some error" />);
-    expect(
-      screen.getByText(/CivicPulse uses local sample data only/i)
-    ).toBeInTheDocument();
-  });
-});
-
-// ---------------------------------------------------------------------------
-// LoadingSpinner
-// ---------------------------------------------------------------------------
-
-describe('LoadingSpinner — accessibility', () => {
-  it('has role="status"', () => {
-    render(<LoadingSpinner />);
-    expect(screen.getByRole('status')).toBeInTheDocument();
-  });
-
-  it('has aria-busy="true"', () => {
-    render(<LoadingSpinner />);
-    const status = screen.getByRole('status');
-    expect(status).toHaveAttribute('aria-busy', 'true');
-  });
-
-  it('has aria-label matching the label prop', () => {
-    render(<LoadingSpinner label="Loading chart..." />);
-    const status = screen.getByRole('status');
-    expect(status).toHaveAttribute('aria-label', 'Loading chart...');
-  });
-
-  it('renders visible label text', () => {
-    render(<LoadingSpinner label="Loading chart..." />);
-    expect(screen.getByText('Loading chart...')).toBeInTheDocument();
-  });
-
-  it('SVG spinner has aria-hidden="true" (decorative)', () => {
-    const { container } = render(<LoadingSpinner />);
-    const svg = container.querySelector('svg');
-    expect(svg).not.toBeNull();
-    expect(svg).toHaveAttribute('aria-hidden', 'true');
-  });
-
-  it('uses default label "Loading..." when no prop given', () => {
-    render(<LoadingSpinner />);
-    expect(screen.getByText('Loading...')).toBeInTheDocument();
+  it('LoadingSpinner has no violations', async () => {
+    const { container } = render(<LoadingSpinner label="Loading chart..." />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

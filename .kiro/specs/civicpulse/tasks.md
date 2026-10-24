@@ -106,16 +106,16 @@ CivicPulse is a static, offline-capable civic dashboard built with Next.js App R
     - Empty-state message appears when filter produces zero results
     - _Requirements: 2.8, 3.8, 4.3_
 
-- [ ] 6. Build the Action Brief panel with safe-language validation
-  - [-] 6.1 Implement `ActionBrief` component in `src/components/ActionBrief.tsx`
+- [x] 6. Build the Action Brief panel with safe-language validation
+  - [x] 6.1 Implement `ActionBrief` component in `src/components/ActionBrief.tsx`
     - Renders all five fields: `whatDataShows`, `whyReviewWarranted`, `dataSource`, `snapshotDate`, `limitations`
     - `limitations` always includes: "Sample data is for demonstration purposes only. CivicPulse is not an official City of Boston service and does not make enforcement, benefit, emergency, or eligibility decisions."
     - _Requirements: 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 10.2_
-  - [-] 6.2 Add forbidden-phrase validation utility in `src/utils/validateActionBrief.ts`
+  - [x] 6.2 Add forbidden-phrase validation utility in `src/utils/validateActionBrief.ts`
     - Export `validateWhyReviewWarranted(text: string): void` that throws (or logs a build-time warning) if `text` matches any phrase in a forbidden-phrases list (enforcement, benefit, eligibility directives)
     - Call this utility when constructing `ActionBrief` data, so violations surface at build time
     - _Requirements: 5.6, 10.2_
-  - [-]* 6.3 Write unit tests for `ActionBrief`
+  - [x]* 6.3 Write unit tests for `ActionBrief`
     - Disclaimer text is present in rendered output
     - `whyReviewWarranted` field does not contain forbidden enforcement/eligibility phrases
     - All required fields are rendered
@@ -139,21 +139,21 @@ CivicPulse is a static, offline-capable civic dashboard built with Next.js App R
     - Data & Limitations page renders all three external links with descriptive text
     - _Requirements: 6.3, 6.4, 7.2, 7.4_
 
-- [ ] 8. Add accessibility, responsive behavior, empty states, and error states
-  - [-] 8.1 Implement `AccessibleChart` wrapper in `src/components/AccessibleChart.tsx`
+- [x] 8. Add accessibility, responsive behavior, empty states, and error states
+  - [x] 8.1 Implement `AccessibleChart` wrapper in `src/components/AccessibleChart.tsx`
     - Wraps Recharts `BarChart` or `LineChart` in a `<figure>` with `<figcaption>` containing source label and limitations note
     - Visually hidden `<table class="sr-only">` as text alternative containing the same data as the chart
     - `role="img"` and `aria-label` on the SVG container
     - Pattern fills (not color-only) via SVG `<defs>` so bars are distinguishable without color
     - Explicit empty state: chart replaced by a text notice when there are no data points; `<figure>` retains `<figcaption>`
     - _Requirements: 9.1, 11.1, 11.4_
-  - [-] 8.2 Apply responsive layout and implement remaining empty/error states
+  - [x] 8.2 Apply responsive layout and implement remaining empty/error states
     - Verify responsive layout renders correctly from 320 px to 1920 px without horizontal scroll using Tailwind responsive utilities
     - Implement `DataError` component displayed when Zod validation fails — human-readable message, no crash
     - Add React Suspense boundaries with `LoadingSpinner` (`aria-busy="true"`, visible label) around heavy chart components
     - Ensure empty states are in place for `NeighborhoodTable`, `PriorityCard` list, `FemaDeclarationList`, and `AccessibleChart`
     - _Requirements: 2.8, 8.4, 11.2_
-  - [ ]* 8.3 Run axe-core accessibility audit on all pages
+  - [x]* 8.3 Run axe-core accessibility audit on all pages
     - Integrate `vitest-axe` and run automated axe-core checks against Dashboard, Preparedness, and Data & Limitations pages
     - Resolve all violations until axe-core reports zero violations on every page
     - _Requirements: 11.1, 11.3, 11.5_

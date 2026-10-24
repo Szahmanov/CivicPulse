@@ -98,7 +98,7 @@ export default function AccessibleChart({
               />
               <Tooltip
                 contentStyle={{ fontSize: 12 }}
-                formatter={(value: number) => [value.toLocaleString(), 'Count']}
+                formatter={(value) => [Number(value).toLocaleString(), 'Count']}
               />
               <Bar dataKey="value" fill={fill} radius={[2, 2, 0, 0]} />
             </BarChart>
