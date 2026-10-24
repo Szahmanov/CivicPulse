@@ -4,6 +4,10 @@
 
 > **Important:** CivicPulse is a demonstration project, not an official City of Boston service. It does not make enforcement, benefit, emergency, or eligibility decisions.
 
+## Live demo
+
+Visit **[civic-pulse-eight-rho.vercel.app](https://civic-pulse-eight-rho.vercel.app/)** for the public static demo.
+
 ## The problem
 
 Public service-request data can show where recurring issues may need attention, but raw records are hard to interpret quickly and can be misused. CivicPulse turns aggregate patterns into plain-language review prompts while keeping the final judgement with people.
