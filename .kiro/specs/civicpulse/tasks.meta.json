@@ -1,0 +1,287 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Bootstrap the Next.js TypeScript and Tailwind project": [
+      {
+        "executionId": "0001332f-3e4a-4f82-805c-6177330519c7",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792858469773
+      },
+      {
+        "executionId": "0001332f-3e4a-4f82-805c-6177330519c7",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792859224153
+      }
+    ],
+    "2.1 Create sample data JSON files": [
+      {
+        "executionId": "312409bf-b0d1-40e9-8b50-17fa186d762c",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792859464248
+      },
+      {
+        "executionId": "312409bf-b0d1-40e9-8b50-17fa186d762c",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792859877987
+      }
+    ],
+    "4.1 Implement `SitewideLayout` component in `src/components/SitewideLayout.tsx`": [
+      {
+        "executionId": "312409bf-b0d1-40e9-8b50-17fa186d762c",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792859465929
+      },
+      {
+        "executionId": "312409bf-b0d1-40e9-8b50-17fa186d762c",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792859878429
+      }
+    ],
+    "4. Build the shared layout, navigation, disclaimer, and source footer": [
+      {
+        "executionId": "312409bf-b0d1-40e9-8b50-17fa186d762c",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792859878454
+      }
+    ],
+    "2.2 Define TypeScript interfaces and loaders": [
+      {
+        "executionId": "9fbb8947-4765-4d9e-a7ee-b86b69344d60",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792860005960
+      },
+      {
+        "executionId": "9fbb8947-4765-4d9e-a7ee-b86b69344d60",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792860436016
+      }
+    ],
+    "4.2 Write unit tests for `SitewideLayout`": [
+      {
+        "executionId": "9fbb8947-4765-4d9e-a7ee-b86b69344d60",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792860007708
+      },
+      {
+        "executionId": "9fbb8947-4765-4d9e-a7ee-b86b69344d60",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792860436510
+      }
+    ],
+    "2. Add local sample-data files and TypeScript data models": [
+      {
+        "executionId": "9fbb8947-4765-4d9e-a7ee-b86b69344d60",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792860436058
+      }
+    ],
+    "3.1 Implement `normalizeScoreInputs` and `computePriorityScore` in `src/data/scoring.ts`": [
+      {
+        "executionId": "4dc252a5-93dd-49e7-be82-88ecd770f58c",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792860602649
+      },
+      {
+        "executionId": "4dc252a5-93dd-49e7-be82-88ecd770f58c",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861034710
+      }
+    ],
+    "3.2 Implement aggregation, filter, and sort functions": [
+      {
+        "executionId": "4dc252a5-93dd-49e7-be82-88ecd770f58c",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792860604477
+      },
+      {
+        "executionId": "4dc252a5-93dd-49e7-be82-88ecd770f58c",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861034962
+      }
+    ],
+    "3. Implement and test the pure priority-score functions": [
+      {
+        "executionId": "4dc252a5-93dd-49e7-be82-88ecd770f58c",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861034989
+      }
+    ],
+    "3.3 Write property-based test for Property 1 — Aggregation Correctness": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861532781
+      }
+    ],
+    "3.4 Write property-based test for Property 2 — Filter Completeness": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861534813
+      }
+    ],
+    "3.5 Write property-based test for Property 3 — Score Determinism and Boundedness": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861536685
+      }
+    ],
+    "3.6 Write property-based test for Property 4 — Priority Card Sort Order": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861538546
+      }
+    ],
+    "5.1 Implement `FilterContext` and `FilterBar` in `src/components/FilterBar.tsx`": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861540730
+      },
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861997724
+      }
+    ],
+    "5.2 Implement `SummaryCards` in `src/components/SummaryCards.tsx`": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861542546
+      },
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861998156
+      }
+    ],
+    "5.3 Implement `NeighborhoodTable` in `src/components/NeighborhoodTable.tsx`": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861544437
+      },
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861998553
+      }
+    ],
+    "5.4 Implement `PriorityCard` in `src/components/PriorityCard.tsx`": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861546232
+      },
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861998984
+      }
+    ],
+    "7.1 Implement `FemaDeclarationList` and the Preparedness page in `src/app/preparedness/page.tsx`": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861548196
+      },
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861999707
+      }
+    ],
+    "7.2 Implement the Data & Limitations page in `src/app/data-limitations/page.tsx`": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792861549966
+      },
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862000217
+      }
+    ],
+    "7. Build the Preparedness page and Data & Limitations page": [
+      {
+        "executionId": "42f7f48d-88bd-497c-9bd6-23a9185a6cfa",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862000252
+      }
+    ],
+    "5.5 Wire `FilterContext` into the Dashboard page": [
+      {
+        "executionId": "d9b03367-23a3-4db0-b411-9f1e3eadf951",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862373579
+      }
+    ],
+    "5. Build the Dashboard filters, summary cards, neighborhood table, and priority cards": [
+      {
+        "executionId": "d9b03367-23a3-4db0-b411-9f1e3eadf951",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862373614
+      }
+    ],
+    "5.6 Write unit tests for Dashboard components": [
+      {
+        "executionId": "d9b03367-23a3-4db0-b411-9f1e3eadf951",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862375625
+      }
+    ],
+    "7.3 Write unit tests for Preparedness and Data & Limitations pages": [
+      {
+        "executionId": "d9b03367-23a3-4db0-b411-9f1e3eadf951",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862384649
+      }
+    ],
+    "6.1 Implement `ActionBrief` component in `src/components/ActionBrief.tsx`": [
+      {
+        "executionId": "d9b03367-23a3-4db0-b411-9f1e3eadf951",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862390587
+      }
+    ],
+    "6.2 Add forbidden-phrase validation utility in `src/utils/validateActionBrief.ts`": [
+      {
+        "executionId": "d9b03367-23a3-4db0-b411-9f1e3eadf951",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862392564
+      }
+    ],
+    "8.1 Implement `AccessibleChart` wrapper in `src/components/AccessibleChart.tsx`": [
+      {
+        "executionId": "d9b03367-23a3-4db0-b411-9f1e3eadf951",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862394431
+      }
+    ],
+    "8.2 Apply responsive layout and implement remaining empty/error states": [
+      {
+        "executionId": "d9b03367-23a3-4db0-b411-9f1e3eadf951",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862396237
+      }
+    ],
+    "6.3 Write unit tests for `ActionBrief`": [
+      {
+        "executionId": "d9b03367-23a3-4db0-b411-9f1e3eadf951",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862398778
+      }
+    ],
+    "8.3 Run axe-core accessibility audit on all pages": [
+      {
+        "executionId": "d9b03367-23a3-4db0-b411-9f1e3eadf951",
+        "chatSessionId": "sess_4c3e860f-b311-4d46-a7e9-f11376cc60e5",
+        "timestamp": 1792862400815
+      }
+    ]
+  }
+}

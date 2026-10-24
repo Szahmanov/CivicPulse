@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "snapshotDate": "2024-01-15",
+    "source": "FEMA Disaster Declarations Summary — Massachusetts (historical)",
+    "officialUrl": "https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2",
+    "limitations": "This data is historical context only and is not a live emergency alert or current risk assessment. CivicPulse is not an official City of Boston service and does not issue emergency notifications."
+  },
+  "records": [
+    {
+      "declarationNumber": "DR-0118-MA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1962-09-17",
+      "state": "Massachusetts",
+      "county": "Suffolk",
+      "programsActivated": [
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0183-MA",
+      "disasterType": "Flood",
+      "declarationDate": "1965-07-06",
+      "state": "Massachusetts",
+      "county": "Middlesex",
+      "programsActivated": [
+        "Public Assistance",
+        "Individual Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0267-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "1969-07-13",
+      "state": "Massachusetts",
+      "county": "Suffolk",
+      "programsActivated": [
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0362-MA",
+      "disasterType": "Flood",
+      "declarationDate": "1972-03-10",
+      "state": "Massachusetts",
+      "county": "Hampden",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0432-MA",
+      "disasterType": "Flood",
+      "declarationDate": "1974-07-01",
+      "state": "Massachusetts",
+      "county": "Middlesex",
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0498-MA",
+      "disasterType": "Earthquake",
+      "declarationDate": "1976-08-19",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0564-MA",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1978-02-19",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0601-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "1979-09-08",
+      "state": "Massachusetts",
+      "county": "Barnstable",
+      "programsActivated": [
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0698-MA",
+      "disasterType": "Flood",
+      "declarationDate": "1982-07-20",
+      "state": "Massachusetts",
+      "county": "Worcester",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0762-MA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1985-09-12",
+      "state": "Massachusetts",
+      "county": "Barnstable",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0823-MA",
+      "disasterType": "Flood",
+      "declarationDate": "1987-07-04",
+      "state": "Massachusetts",
+      "county": "Middlesex",
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0894-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "1990-04-12",
+      "state": "Massachusetts",
+      "county": "Suffolk",
+      "programsActivated": [
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0921-MA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1991-10-04",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0956-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "1992-08-22",
+      "state": "Massachusetts",
+      "county": "Essex",
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-0990-MA",
+      "disasterType": "Snowstorm",
+      "declarationDate": "1993-02-03",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1024-MA",
+      "disasterType": "Ice Storm",
+      "declarationDate": "1994-02-16",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1101-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "1996-05-07",
+      "state": "Massachusetts",
+      "county": "Middlesex",
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1148-MA",
+      "disasterType": "Flood",
+      "declarationDate": "1997-04-02",
+      "state": "Massachusetts",
+      "county": "Hampden",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1184-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "1998-09-02",
+      "state": "Massachusetts",
+      "county": "Essex",
+      "programsActivated": [
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1231-MA",
+      "disasterType": "Hurricane",
+      "declarationDate": "1999-08-15",
+      "state": "Massachusetts",
+      "county": "Bristol",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1348-MA",
+      "disasterType": "Drought",
+      "declarationDate": "2001-08-16",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1428-MA",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2003-01-03",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1490-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2004-06-06",
+      "state": "Massachusetts",
+      "county": "Essex",
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1542-MA",
+      "disasterType": "Flood",
+      "declarationDate": "2005-07-11",
+      "state": "Massachusetts",
+      "county": "Worcester",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1614-MA",
+      "disasterType": "Flood",
+      "declarationDate": "2006-06-27",
+      "state": "Massachusetts",
+      "county": "Middlesex",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1701-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2007-03-20",
+      "state": "Massachusetts",
+      "county": "Barnstable",
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1764-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2008-08-08",
+      "state": "Massachusetts",
+      "county": "Worcester",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1830-MA",
+      "disasterType": "Flood",
+      "declarationDate": "2009-03-09",
+      "state": "Massachusetts",
+      "county": "Middlesex",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1898-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2010-07-20",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1909-MA",
+      "disasterType": "Flood",
+      "declarationDate": "2010-06-06",
+      "state": "Massachusetts",
+      "county": "Middlesex",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4028-MA",
+      "disasterType": "Hurricane",
+      "declarationDate": "2011-09-11",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-1994-MA",
+      "disasterType": "Tornado",
+      "declarationDate": "2011-05-26",
+      "state": "Massachusetts",
+      "county": "Hampden",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-2006-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2011-08-17",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4046-MA",
+      "disasterType": "Hurricane",
+      "declarationDate": "2012-09-05",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4110-MA",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2013-01-19",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4176-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2014-06-05",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4214-MA",
+      "disasterType": "Snowstorm",
+      "declarationDate": "2015-03-28",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4272-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2016-03-28",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4328-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2017-09-14",
+      "state": "Massachusetts",
+      "county": "Hampden",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4393-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2018-07-25",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4401-MA",
+      "disasterType": "Ice Storm",
+      "declarationDate": "2018-12-01",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4452-MA",
+      "disasterType": "Flood",
+      "declarationDate": "2019-03-26",
+      "state": "Massachusetts",
+      "county": "Middlesex",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4512-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2020-08-04",
+      "state": "Massachusetts",
+      "county": "Barnstable",
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4524-MA",
+      "disasterType": "Flood",
+      "declarationDate": "2020-06-20",
+      "state": "Massachusetts",
+      "county": "Middlesex",
+      "programsActivated": [
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4592-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2021-04-27",
+      "state": "Massachusetts",
+      "county": "Hampden",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4612-MA",
+      "disasterType": "Hurricane",
+      "declarationDate": "2021-09-14",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4664-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2022-05-27",
+      "state": "Massachusetts",
+      "county": "Suffolk",
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4677-MA",
+      "disasterType": "Flood",
+      "declarationDate": "2022-07-24",
+      "state": "Massachusetts",
+      "county": "Hampden",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4720-MA",
+      "disasterType": "Severe Storm",
+      "declarationDate": "2023-05-07",
+      "state": "Massachusetts",
+      "county": null,
+      "programsActivated": [
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    },
+    {
+      "declarationNumber": "DR-4738-MA",
+      "disasterType": "Flood",
+      "declarationDate": "2023-04-22",
+      "state": "Massachusetts",
+      "county": "Middlesex",
+      "programsActivated": [
+        "Individual Assistance",
+        "Public Assistance",
+        "Hazard Mitigation"
+      ]
+    }
+  ]
+}

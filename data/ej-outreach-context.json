@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "snapshotDate": "2024-01-15",
+    "source": "Massachusetts Environmental Justice Population Data (aggregate outreach context)",
+    "officialUrl": "https://www.mass.gov/info-details/environmental-justice-populations-in-massachusetts",
+    "limitations": "This flag represents aggregate neighborhood-level outreach context only. It does not profile individual residents or constitute an official environmental justice determination. CivicPulse is not an official City of Boston service."
+  },
+  "records": [
+    {
+      "neighborhood": "Allston",
+      "hasOutreachFlag": true,
+      "note": "This neighborhood is associated with aggregate environmental justice outreach context based on publicly available Massachusetts EJ population data. This flag does not represent individual resident characteristics."
+    },
+    {
+      "neighborhood": "Back Bay",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "Bay Village",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "Beacon Hill",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "Brighton",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "Charlestown",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "Chinatown",
+      "hasOutreachFlag": true,
+      "note": "This neighborhood is associated with aggregate environmental justice outreach context based on publicly available Massachusetts EJ population data. This flag does not represent individual resident characteristics."
+    },
+    {
+      "neighborhood": "Dorchester",
+      "hasOutreachFlag": true,
+      "note": "This neighborhood is associated with aggregate environmental justice outreach context based on publicly available Massachusetts EJ population data. This flag does not represent individual resident characteristics."
+    },
+    {
+      "neighborhood": "East Boston",
+      "hasOutreachFlag": true,
+      "note": "This neighborhood is associated with aggregate environmental justice outreach context based on publicly available Massachusetts EJ population data. This flag does not represent individual resident characteristics."
+    },
+    {
+      "neighborhood": "Fenway",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "Hyde Park",
+      "hasOutreachFlag": true,
+      "note": "This neighborhood is associated with aggregate environmental justice outreach context based on publicly available Massachusetts EJ population data. This flag does not represent individual resident characteristics."
+    },
+    {
+      "neighborhood": "Jamaica Plain",
+      "hasOutreachFlag": true,
+      "note": "This neighborhood is associated with aggregate environmental justice outreach context based on publicly available Massachusetts EJ population data. This flag does not represent individual resident characteristics."
+    },
+    {
+      "neighborhood": "Leather District",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "Longwood",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "Mattapan",
+      "hasOutreachFlag": true,
+      "note": "This neighborhood is associated with aggregate environmental justice outreach context based on publicly available Massachusetts EJ population data. This flag does not represent individual resident characteristics."
+    },
+    {
+      "neighborhood": "Mission Hill",
+      "hasOutreachFlag": true,
+      "note": "This neighborhood is associated with aggregate environmental justice outreach context based on publicly available Massachusetts EJ population data. This flag does not represent individual resident characteristics."
+    },
+    {
+      "neighborhood": "North End",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "Roslindale",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "Roxbury",
+      "hasOutreachFlag": true,
+      "note": "This neighborhood is associated with aggregate environmental justice outreach context based on publicly available Massachusetts EJ population data. This flag does not represent individual resident characteristics."
+    },
+    {
+      "neighborhood": "South Boston",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "South Boston Waterfront",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "South End",
+      "hasOutreachFlag": true,
+      "note": "This neighborhood is associated with aggregate environmental justice outreach context based on publicly available Massachusetts EJ population data. This flag does not represent individual resident characteristics."
+    },
+    {
+      "neighborhood": "West End",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    },
+    {
+      "neighborhood": "West Roxbury",
+      "hasOutreachFlag": false,
+      "note": "No aggregate environmental justice outreach flag is associated with this neighborhood in the current sample data."
+    }
+  ]
+}
