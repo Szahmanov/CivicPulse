@@ -13,7 +13,7 @@ The application targets city operations staff, community organizations, and resi
 | Rendering strategy | Static export (`output: 'export'`) | Guarantees offline operation; no server required for hackathon demo |
 | Data loading | Static `import` at module level | Zero runtime fetch; TypeScript type-checks the schema at compile time |
 | Charting library | Recharts (MIT) | First-class React integration, built-in ARIA support, easy to pair with accessible summary tables |
-| Priority score | Pure TypeScript function, four weighted inputs | Deterministic, testable, no side effects; weights are visible in UI |
+| Priority score | Pure TypeScript function, three weighted inputs | Deterministic, testable, no side effects; weights are visible in UI |
 | State management | React `useState` / `useReducer` in a single filter context | Sufficient for a local data set; avoids unnecessary complexity |
 | CSS framework | Tailwind CSS v3 utility classes | Rapid responsive layout; consistent color palette with WCAG-AA contrast enforcement |
 | Map | **None** | Requirements explicitly prohibit implying an exact EJ-to-neighborhood geographic match |
@@ -137,15 +137,13 @@ interface PriorityCardProps {
   openPressure:    number;           // 0–1 normalised
   repeatedPressure: number;          // 0–1 normalised
   onTimePressure:  number;           // 0–1 normalised (inverse on-time rate)
-  outreachFlag:    boolean;
   plainExplanation: string;
   actionBrief:     ActionBrief;
 }
 ```
 
 - Displays score prominently with an accessible colour-blind-safe colour scale (uses pattern + text in addition to colour).
-- Displays all four score component values as labelled progress bars with numeric annotations.
-- The `outreachFlag` row always carries the label: *"Aggregate outreach context — this flag represents neighborhood-level data and does not profile individual residents."*
+- Displays all three score component values as labelled progress bars with numeric annotations.
 - Expandable section for the ActionBrief (toggle button, `aria-expanded`).
 - The plain-language explanation uses no statistical jargon.
 
@@ -190,7 +188,7 @@ A static content page documenting:
 - Link to Boston 311 official data source.
 - Link to FEMA disaster declarations official source.
 - Link to MA_211.
-- Explanation of the outreach context flag and what it does and does not represent.
+- Explanation of Environmental Justice data limitations: it is citywide/block-group context only and does not affect scores.
 
 ---
 
@@ -214,10 +212,10 @@ interface Request311 {
 ### EJOutreachContext
 
 ```typescript
-interface EJOutreachContext {
-  neighborhood:    string;
-  hasOutreachFlag: boolean; // true = outreach data associated with this neighborhood
-  note:            string;  // explains the aggregate nature of the flag
+interface EJCitywideContext {
+  municipality: string;
+  flaggedBlockGroupCount: number;
+  note: string;
 }
 ```
 
@@ -238,9 +236,9 @@ interface FemaDeclaration {
 
 | File | Description | Row count (demo) |
 |---|---|---|
-| `data/311-requests.json` | Synthetic 311 service requests for Boston neighborhoods | ~500 records |
-| `data/ej-outreach-context.json` | Binary outreach flag per neighborhood | ~25 records (one per neighborhood) |
-| `data/fema-declarations.json` | Historical FEMA MA disaster declarations | ~50 records |
+| `data/311-requests.json` | De-identified Boston 311 starter-kit extract | 4,990 valid records |
+| `data/ej-outreach-context.json` | Boston citywide/block-group Environmental Justice context | 1 citywide summary |
+| `data/fema-declarations.json` | Historical FEMA MA declaration starter-kit extract | 415 records |
 
 Each file includes a top-level `meta` object:
 
@@ -272,7 +270,6 @@ interface ScoreInputs {
   openCasePressure:     number; // 0–1
   repeatedPressure:     number; // 0–1
   onTimePressure:       number; // 0–1 (1 − on-time rate)
-  outreachContextFlag:  0 | 1;
 }
 
 interface ScoreResult {
@@ -301,7 +298,6 @@ Score = clamp(
   W_open   * openCasePressure
 + W_repeat * repeatedPressure
 + W_ontime * onTimePressure
-+ W_flag   * outreachContextFlag
 , 0, 100
 )
 ```
@@ -310,12 +306,11 @@ Score = clamp(
 
 | Component | Weight | Rationale |
 |---|---|---|
-| `openCasePressure` | 35 | Unresolved open cases represent current service demand; this is the most direct indicator of immediate need |
-| `repeatedPressure` | 30 | Persistent repeat requests in the same area suggest a systemic pattern rather than a one-off event |
+| `openCasePressure` | 40 | Unresolved open cases represent current service demand; this is the most direct indicator of immediate need |
+| `repeatedPressure` | 35 | Persistent repeat requests in the same area suggest a systemic pattern rather than a one-off event |
 | `onTimePressure` | 25 | A low on-time resolution rate (high pressure value) indicates service-level failure, which compounds community impact |
-| `outreachContextFlag` | 10 | The flag provides aggregate neighborhood outreach context; it is a binary modifier, not a primary driver, to avoid profiling |
 
-The four weights sum to 100. Each component is pre-normalised to the range [0, 1] before multiplication, so the raw score is already in [0, 100]. `clamp` guards against floating-point edge cases.
+The three weights sum to 100. Each component is pre-normalised to the range [0, 1] before multiplication, so the raw score is already in [0, 100]. `clamp` guards against floating-point edge cases.
 
 ### Normalisation Rules
 
@@ -323,7 +318,6 @@ The four weights sum to 100. Each component is pre-normalised to the range [0, 1
 - **repeatedPressure**: `groupCount / max(groupCount across all groups, 1)`
 - **onTimePressure**: `1 − (onTimeClosedCount / max(closedCount, 1))`  
   (If no closed cases exist, pressure defaults to 0 — absence of evidence is not evidence of failure)
-- **outreachContextFlag**: `1` if `EJOutreachContext.hasOutreachFlag === true`, else `0`
 
 Normalisation is performed in a separate pure function `normalizeScoreInputs(raw: RawScoreInputs, maxima: Maxima): ScoreInputs` so the score function itself only ever receives pre-normalised values.
 
@@ -351,7 +345,7 @@ Every Priority_Card displays the **normalised** value for each component (as a f
 
 ### Property 3: Score Determinism and Boundedness
 
-*For any* `ScoreInputs` value where each normalised input is in the range [0, 1] and `outreachContextFlag` is 0 or 1, `computePriorityScore(inputs).score` must always be a finite number in the closed interval [0, 100], and calling the function twice with the same inputs must return the same score. Additionally, holding all other inputs constant, a score computed with `outreachContextFlag = 1` must be exactly 10 points higher than a score computed with `outreachContextFlag = 0` (reflecting the weight of the flag component).
+*For any* `ScoreInputs` value where each normalised input is in the range [0, 1], `computePriorityScore(inputs).score` must always be a finite number in the closed interval [0, 100], and calling the function twice with the same inputs must return the same score.
 
 **Validates: Requirements 3.2, 3.4, 3.5, 3.6, 3.7**
 
@@ -451,10 +445,7 @@ fc.assert(fc.property(
   (inputs) => {
     const s1 = computePriorityScore(inputs).score;
     const s2 = computePriorityScore(inputs).score;
-    const flagDelta =
-      computePriorityScore({ ...inputs, outreachContextFlag: 1 }).score -
-      computePriorityScore({ ...inputs, outreachContextFlag: 0 }).score;
-    return s1 === s2 && s1 >= 0 && s1 <= 100 && Math.abs(flagDelta - 10) < 0.001;
+    return s1 === s2 && s1 >= 0 && s1 <= 100;
   }
 ), { numRuns: 100 });
 ```
@@ -477,8 +468,7 @@ fc.assert(fc.property(
 
 Unit tests cover:
 
-- **Presence tests**: Filter controls render with correct `<label>` associations; each Priority_Card renders all four component values; ActionBrief renders all required fields (source, date, limitations, no-decision statement).
-- **Outreach flag label**: When `outreachFlag` is true, the card renders the aggregate-data disclaimer text.
+- **Presence tests**: Filter controls render with correct `<label>` associations; each Priority_Card renders all three component values; ActionBrief renders all required fields (source, date, limitations, no-decision statement).
 - **Empty state messages**: Correct messages appear when filter produces zero results or no data is available.
 - **External links**: All external `<a>` tags have `target="_blank"`, `rel="noopener noreferrer"`, and descriptive text (not "click here").
 - **Accessibility structure**: Charts render a `<table>` with `class="sr-only"` containing the same data; chart SVG has `role="img"` and `aria-label`; each chart `<figure>` has a `<figcaption>`.

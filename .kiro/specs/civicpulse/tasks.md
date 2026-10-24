@@ -27,7 +27,7 @@ CivicPulse is a static, offline-capable civic dashboard built with Next.js App R
 - [x] 3. Implement and test the pure priority-score functions
   - [x] 3.1 Implement `normalizeScoreInputs` and `computePriorityScore` in `src/data/scoring.ts`
     - `normalizeScoreInputs(raw, maxima): ScoreInputs` — pure, no side effects
-    - `computePriorityScore(inputs: ScoreInputs): ScoreResult` — weights: open-case pressure 35, repeated 30, on-time 25, outreach flag 10; result clamped to [0, 100]
+    - `computePriorityScore(inputs: ScoreInputs): ScoreResult` — weights: open-case pressure 40, repeated 35, on-time 25; result clamped to [0, 100]
     - _Requirements: 3.2, 3.4, 3.5, 3.6, 3.7_
   - [x] 3.2 Implement aggregation, filter, and sort functions
     - `aggregateByNeighborhood(records, allNeighborhoods): NeighborhoodAggregate[]` in `src/data/aggregations.ts`
@@ -47,7 +47,7 @@ CivicPulse is a static, offline-capable civic dashboard built with Next.js App R
     - **Validates: Requirements 2.6, 2.7**
   - [x]* 3.5 Write property-based test for Property 3 — Score Determinism and Boundedness
     - Write test in `src/data/__tests__/scoring.test.ts`
-    - **Property 3: Score Determinism and Boundedness** — score is always in [0, 100]; same inputs always produce the same score; `outreachContextFlag = 1` adds exactly 10 points over `outreachContextFlag = 0`
+    - **Property 3: Score Determinism and Boundedness** — normalized values and final score remain in [0, 1] and [0, 100] respectively; same inputs always produce the same score
     - Use `arbScoreInputs`, minimum 100 runs
     - **Validates: Requirements 3.2, 3.4, 3.5, 3.6, 3.7**
   - [x]* 3.6 Write property-based test for Property 4 — Priority Card Sort Order
@@ -91,8 +91,7 @@ CivicPulse is a static, offline-capable civic dashboard built with Next.js App R
     - _Requirements: 1.1, 1.3, 1.4, 9.1, 9.2_
   - [x] 5.4 Implement `PriorityCard` in `src/components/PriorityCard.tsx`
     - Displays `score` prominently with a color-blind-safe scale (pattern + text in addition to color)
-    - Displays all four score component values as labeled progress bars with numeric annotations
-    - Outreach flag row always includes: "Aggregate outreach context — this flag represents neighborhood-level data and does not profile individual residents."
+    - Displays all three score component values as labeled progress bars with numeric annotations
     - Expandable ActionBrief section controlled by a toggle button with `aria-expanded`
     - _Requirements: 3.1, 3.2, 3.3, 3.8, 4.1, 4.2, 4.3, 4.4, 9.4, 10.4_
   - [x] 5.5 Wire `FilterContext` into the Dashboard page
@@ -102,7 +101,7 @@ CivicPulse is a static, offline-capable civic dashboard built with Next.js App R
     - _Requirements: 2.6, 2.8, 3.3_
   - [x]* 5.6 Write unit tests for Dashboard components
     - Filter controls render with correct `<label>` associations
-    - `PriorityCard` renders all four score component values and outreach flag label
+    - `PriorityCard` renders all three score component values
     - Empty-state message appears when filter produces zero results
     - _Requirements: 2.8, 3.8, 4.3_
 
@@ -131,7 +130,7 @@ CivicPulse is a static, offline-capable civic dashboard built with Next.js App R
     - Static content documenting what each sample data file contains and does not contain
     - Snapshot date and provenance for each data set
     - Links to Boston 311 official source, FEMA official source, and MA 211 — all with descriptive text and `target="_blank"`
-    - Explanation of outreach context flag and what it does and does not represent
+    - Explanation of Environmental Justice data limitations and non-use in scoring
     - _Requirements: 7.2, 9.1, 9.4_
   - [x]* 7.3 Write unit tests for Preparedness and Data & Limitations pages
     - Preparedness page renders the historical-context-only `<aside>` notice
@@ -158,21 +157,21 @@ CivicPulse is a static, offline-capable civic dashboard built with Next.js App R
     - Resolve all violations until axe-core reports zero violations on every page
     - _Requirements: 11.1, 11.3, 11.5_
 
-- [ ] 9. Add full unit test suite, confirm property tests, build verification, and README
-  - [ ] 9.1 Complete unit test coverage in `src/components/__tests__/` and `src/app/__tests__/`
+- [x] 9. Add full unit test suite, confirm property tests, build verification, and README
+  - [x] 9.1 Complete unit test coverage in `src/components/__tests__/` and `src/app/__tests__/`
     - Filter controls render with correct `<label>` associations
-    - `PriorityCard` renders all four score component values
+    - `PriorityCard` renders all three score component values
     - `ActionBrief` renders all required fields (source, date, limitations, no-decision statement)
     - External links across all pages have `target="_blank"`, `rel="noopener noreferrer"`, and descriptive text
     - Charts render SR-only `<table>`, `role="img"`, `aria-label`, and `<figcaption>`
     - Preparedness page renders historical-context-only disclaimer
     - Empty-state messages display correctly for each component
     - _Requirements: 4.1, 5.1, 5.3, 5.4, 5.5, 7.3, 7.4, 11.1_
-  - [ ] 9.2 Confirm all property-based tests pass and build succeeds
+  - [x] 9.2 Confirm all property-based tests pass and build succeeds
     - Run `npx vitest run` — all property tests from Task 3 and all unit tests from Tasks 4–8 must pass with zero failures
     - Run `npm run build` — must complete with zero TypeScript errors and produce `/out`
     - _Requirements: 8.1, 8.2, 8.3_
-  - [ ] 9.3 Write README.md
+  - [x] 9.3 Write README.md
     - Project overview and purpose
     - Local dev setup instructions (`npm install`, `npm run dev`)
     - Build and static serve instructions (`npm run build`, `npx serve out`)
@@ -187,7 +186,7 @@ CivicPulse is a static, offline-capable civic dashboard built with Next.js App R
   - Confirm all sitewide disclaimers present on every page: "not an official City of Boston service" + "no enforcement/benefit/emergency/eligibility decisions"
   - Confirm all external links open in new tabs with descriptive text
   - Confirm all charts display source label, limitations note, and snapshot date
-  - Confirm outreach context flag is accompanied by aggregate-data label on every occurrence
+  - Confirm Environmental Justice context remains citywide only and does not affect scoring
   - Confirm Preparedness page shows historical-context-only notice
   - Verify responsive layout at 320 px and 1280 px viewport widths (no horizontal scroll)
   - _Requirements: 1.1–1.4, 2.1–2.8, 3.1–3.8, 4.1–4.4, 5.1–5.6, 6.1–6.6, 7.1–7.4, 8.1–8.4, 9.1–9.4, 10.1–10.4, 11.1–11.5_

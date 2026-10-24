@@ -1,6 +1,6 @@
 # CivicPulse
 
-**CivicPulse** is an explainable dashboard for exploring repeated Boston 311 service-request patterns and supporting equitable human review. It was built for the **Hackachusetts 2026 — Civic Action** track.
+**CivicPulse** is an explainable dashboard for exploring repeated Boston 311 service-request patterns and supporting equitable human review. It was built for the **Hackachusetts 2026 — Civic Services** track.
 
 > **Important:** CivicPulse is a demonstration project, not an official City of Boston service. It does not make enforcement, benefit, emergency, or eligibility decisions.
 

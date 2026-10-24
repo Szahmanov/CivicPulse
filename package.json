@@ -29,6 +29,7 @@
     "axe-core": "^4.14.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.28",
+    "fast-check": "^4.10.2",
     "jsdom": "^26.1.0",
     "postcss": "^8.5.31",
     "tailwindcss": "^3.4.19",

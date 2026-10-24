@@ -17,12 +17,11 @@ CivicPulse is an explainable civic dashboard that surfaces repeated Boston 311 s
 - **Open_Case_Pressure**: A score component reflecting the number of currently open cases in a given Neighborhood–Service_Topic grouping.
 - **Repeated_Service_Pressure**: A score component reflecting how often the same service type has been requested in the same neighborhood within the selected Time_Period.
 - **On_Time_Status**: A score component reflecting the ratio of cases resolved within the expected service-level timeframe to total closed cases.
-- **Outreach_Context_Flag**: A score component indicating that aggregate environmental-justice or demographic outreach data is associated with the neighborhood. This is not a profile of individual residents.
 - **Action_Brief**: A structured text summary attached to a Priority_Card that explains what the data shows, why human review is warranted, the data source, the snapshot date, and the limitations of the data.
 - **Preparedness_Page**: A static page presenting historical FEMA Massachusetts disaster declaration data as background context for civic preparedness planning.
 - **Sample_Data**: Local JSON or CSV files bundled with the application containing de-identified, synthetic or publicly sourced records used for demonstration without internet access.
 - **MA_211**: Massachusetts 211, a statewide social services referral service at mass211.org.
-- **Score**: A computed numeric value summarizing the urgency or attention level of a Priority_Card based on its four score components.
+- **Score**: A computed numeric value summarizing the review priority of a Priority_Card based on three transparent, non-personal data components.
 
 ---
 
@@ -65,13 +64,12 @@ CivicPulse is an explainable civic dashboard that surfaces repeated Boston 311 s
 #### Acceptance Criteria
 
 1. THE Dashboard SHALL render a Priority_Card for each Neighborhood–Service_Topic combination that contains at least one matching 311_Request record under the current filters.
-2. THE Dashboard SHALL compute a Score for each Priority_Card using Open_Case_Pressure, Repeated_Service_Pressure, On_Time_Status, and Outreach_Context_Flag as inputs.
+2. THE Dashboard SHALL compute a Score for each Priority_Card using Open_Case_Pressure, Repeated_Service_Pressure, and On_Time_Status as inputs.
 3. THE Dashboard SHALL display Priority_Cards in descending Score order by default.
 4. WHEN Open_Case_Pressure is computed, THE Dashboard SHALL base it on the count of currently open cases in the Neighborhood–Service_Topic grouping within the active Time_Period.
 5. WHEN Repeated_Service_Pressure is computed, THE Dashboard SHALL base it on the frequency of the same Service_Topic in the same Neighborhood within the active Time_Period.
 6. WHEN On_Time_Status is computed, THE Dashboard SHALL base it on the ratio of closed cases resolved within the expected service-level timeframe to all closed cases in the grouping.
-7. WHERE Outreach_Context_Flag data is available for a Neighborhood, THE Dashboard SHALL include it as a binary flag in the Score computation.
-8. THE Dashboard SHALL display the individual values of Open_Case_Pressure, Repeated_Service_Pressure, On_Time_Status, and Outreach_Context_Flag on each Priority_Card.
+7. THE Dashboard SHALL display the individual values of Open_Case_Pressure, Repeated_Service_Pressure, and On_Time_Status on each Priority_Card.
 
 ---
 
@@ -83,8 +81,7 @@ CivicPulse is an explainable civic dashboard that surfaces repeated Boston 311 s
 
 1. THE Priority_Card SHALL display a plain-language explanation of the Score that describes the contribution of each score component in non-technical terms.
 2. THE Priority_Card SHALL not use algorithmic or statistical jargon in the plain-language explanation.
-3. WHEN the Outreach_Context_Flag is set for a Neighborhood, THE Priority_Card SHALL clarify in the explanation that the flag represents aggregate outreach context and does not profile individual residents.
-4. THE Priority_Card SHALL display the explanation text at a reading level accessible to a general audience.
+3. THE Priority_Card SHALL display the explanation text at a reading level accessible to a general audience.
 
 ---
 
@@ -153,7 +150,6 @@ CivicPulse is an explainable civic dashboard that surfaces repeated Boston 311 s
 1. THE Dashboard SHALL display a source label and a limitations note on every chart or map visualization.
 2. THE Dashboard SHALL display the snapshot date of the Sample_Data on every page that presents data.
 3. THE Dashboard SHALL display a sitewide notice stating that CivicPulse is not an official City of Boston service.
-4. WHEN Outreach_Context_Flag data is presented, THE Dashboard SHALL accompany it with a label stating it is aggregate outreach context only and does not represent individual resident profiles.
 
 ---
 
@@ -166,7 +162,6 @@ CivicPulse is an explainable civic dashboard that surfaces repeated Boston 311 s
 1. THE Dashboard SHALL display a disclaimer on every page stating that CivicPulse does not make enforcement, benefit, emergency, or eligibility decisions.
 2. THE Action_Brief SHALL not contain language that directs a reviewer to take a specific enforcement, benefit, or eligibility action.
 3. THE Dashboard SHALL not collect, store, or display any personally identifiable information about individual residents.
-4. WHEN Outreach_Context_Flag is displayed, THE Dashboard SHALL present it as neighborhood-level aggregate data and not as a characteristic of any individual.
 
 ---
 
